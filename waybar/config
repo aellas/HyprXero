@@ -25,7 +25,6 @@
        "network",
        "custom/spacer",
        "tray",
-       "custom/spacer",
        "custom/lockscreen",
        "custom/pacman",
        "custom/disks",
@@ -38,6 +37,14 @@
        "custom/settings",
        "custom/shutdown"
       ],
+
+"custom/spacer-tray-aware": {
+  "exec": "~/.config/waybar/modules/detech_tray.sh",
+  "interval": 5,
+  "return-type": "json",
+  "format": "{}",
+  "on-click": "echo noop"
+},
 
 "custom/keybinds": {
    "format": "󰘳"
@@ -89,6 +96,7 @@
     "tooltip-format-disconnected": "Disconnected",
     "max-length": 50
 },
+
 "custom/spacer": {
  "format": "|",
 },
@@ -177,9 +185,9 @@
     },
     "format": "{icon}",
     "format-icons": ["", "", "", "", ""],
+    "format-charging": "󱐋 {icon}",
     "max-length": 25
-},
-      
+}, 
     "hyprland/workspaces": {
           "active-only": false,
           "all-outputs": true,
