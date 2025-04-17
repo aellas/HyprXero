@@ -45,7 +45,8 @@
 
 
 "custom/keybinds": {
-   "format": "󰘳"
+   "format": "󰘳",
+   "on-click": "~/.config/scripts/rofi/search_keybinds.sh"
 },
 "custom/launcher": {
         //"format":"<U+F44E>",
