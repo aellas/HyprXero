@@ -25,7 +25,7 @@
        "network",
        "custom/spacer",
        "tray",
-       "custom/lockscreen",
+       "custom/lock-toggle",
        "custom/pacman",
        "custom/keyboard",
        "custom/network",
@@ -55,6 +55,13 @@
         "on-click": "exec nwg-drawer -c 7 -is 70 -spacing 23",
      },
 
+"custom/lock-toggle": {
+    "format": "{}",
+    "exec": "~/.config/waybar/lock_toggle_status.sh",
+    "interval": 5,
+    "on-click": "~/.config/waybar/lock_toggle.sh"
+},
+
 "custom/lockscreen": {
    "format": ""
 },
@@ -75,9 +82,15 @@
   "format": ""
 
 },
+
 "custom/network": {
-  "format": "󰖩"
+  "exec": "~/.config/waybar/modules/network.sh",
+  "interval": 10,
+  "tooltip": true,
+  "on-click": "nm-connection-editor",
+  "return-type": "json"
 },
+
 "network": {
     "interface": "wlan0",
     "format": "{bandwidthDownBits}  {bandwidthUpBytes}",
@@ -183,6 +196,7 @@
     "format-charging": "󱐋 {icon}",
     "max-length": 25
 }, 
+
     "hyprland/workspaces": {
           "active-only": false,
           "all-outputs": true,

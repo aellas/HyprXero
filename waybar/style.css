@@ -61,8 +61,6 @@ window {
 }
 
 #battery {
-    min-width: 0;
-    box-shadow: inset 0 -3px transparent;
     color: #ffffff;
 }
 
@@ -193,6 +191,11 @@ window {
     background-repeat: no-repeat;
     background-size: contain;
     margin-left: 15px;
+}
+
+#custom-lock-toggle {
+    margin-right: 12px;
+    color: white;
 }
 
 

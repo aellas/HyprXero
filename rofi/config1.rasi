@@ -1,0 +1,127 @@
+/* ROFI Dracula Theme (Adapted from Storm) */
+
+configuration {
+    show-icons:         true;
+    display-drun:       "Run Menu";
+    disable-history:    false;
+}
+
+* {
+    font:               "Ubuntu Nerd Font Regular 14"; /* Or your preferred font */
+    foreground:         #f8f8f2; /* fg0 - Main text */
+    background-color:   #1E1F28; /* bg0 - Main background */
+    selected-background: #6272a4; /* bg3 - Selection highlight */
+    selected-foreground: #f8f8f2; /* fg0 - Selected text */
+    title-background:   #1E1F28; /* bg2 - Title background */
+    title-foreground:   #f8f8f2; /* fg0 - Title text */
+    separatorcolor:     #44475a; /* bg2 - Separator */
+    bordercolor:          #82DCCC; /* bg2 - Border */
+}
+
+#window {
+    border:           2px;
+    border-radius:      10px;
+    border-color:     @bordercolor;
+    padding:          0;
+    width:            500px;
+}
+
+#mainbox {
+    border:           0;
+    padding:          0;
+}
+
+#message {
+    border:           0px;
+    border-color:     @separatorcolor;
+    padding:          0px;
+}
+
+#textbox {
+    background-color: @title-background;
+    text-color:       @title-foreground;
+}
+
+#listview {
+    fixed-height:     0;
+    border:           0px;
+    border-color:     @bordercolor;
+    spacing:          0px;
+    scrollbar:        false;
+    padding:          2px 0px 4px 0px;
+}
+
+#element {
+    border:           0;
+    padding:          3px;
+}
+
+#element.normal, element.alternate {
+    background-color: @background-color;
+    text-color:       @foreground;
+}
+
+#element.selected {
+    background-color: @selected-background;
+    text-color:       @selected-foreground;
+}
+
+#scrollbar {
+    width:            2px;
+    border:           0;
+    handle-width:     8px;
+    padding:          0;
+}
+
+#sidebar {
+    border:           0px dash 0px 0px;
+    border-color:     @separatorcolor;
+}
+
+#button.selected {
+    background-color: @selected-background;
+    text-color:       @selected-foreground;
+}
+
+#inputbar {
+    spacing:          0;
+    background-color: @title-background;
+    padding:          10px 10px 7px 10px;
+    text-color:       @title-foreground;
+}
+
+#case-indicator {
+    spacing:          0;
+    text-color:       @title-foreground;
+    background-color: @title-background;
+}
+
+#entry {
+    spacing:          0;
+    text-color:       @title-foreground;
+    background-color: @title-background;
+    width:            20px;
+}
+
+#prompt {
+    spacing:          0;
+    text-color:       @title-foreground;
+    background-color: @title-background;
+    width:            100px;
+}
+
+#inputbar {
+    children:         [ prompt,textbox-prompt-colon,entry,case-indicator ];
+}
+
+#textbox-prompt-colon {
+    expand:           false;
+    str:              ": ";
+    background-color: @title-background;
+    text-color:       @title-foreground;
+}
+
+element-text, element-icon {
+    background-color: inherit;
+    text-color:       inherit;
+}
