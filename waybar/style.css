@@ -13,7 +13,6 @@
 
 window {
     background: transparent;
-    margin: -5px;
     background-color: @bg;
     border-radius: 12px;
 }
@@ -21,17 +20,31 @@ window {
 #workspaces {
     transition: none;
     background: transparent;
+    margin-left: -5px;
 }
 
 #workspaces button {
+    background: transparent;
     box-shadow: none;
     text-shadow: none;
-    padding: 6px 4px;
+    border: none;
+    outline: none;
+    color: #f1f1f1;
+    font-size: 14px;
+        padding: 6px 4px;
     border-radius: 13px;
     margin-top: 1px;
     margin-bottom: 1px;
-    color: #f1f1f1;
 }
+
+#workspaces button:hover {
+    color: #50fa7b; /* Dracula green */
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: none;
+}
+
 
 #workspaces button.persistent {
     color: #f1f1f1;
@@ -51,7 +64,6 @@ window {
     min-width: 0;
     box-shadow: inset 0 -3px transparent;
     color: #ffffff;
-    margin-right: 5px;
 }
 
 #custom-arch {
@@ -77,11 +89,13 @@ window {
 }
 
 #custom-spacer {
-    margin-left: -6px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 #custom-spacer1 {
-    margin-right: -6px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 #window {
@@ -120,10 +134,7 @@ window {
     font-family: 'Ubuntu Nerd Font', monospace;
     font-size: 12px;
     font-weight: bold;
-    margin: 2px;
-    border-radius: 4px;
     color: #ffffff;
-    padding: 2px 6px;
 }
 
 
@@ -131,12 +142,10 @@ window {
 #custom-shutdown {
     color: #ffffff;
     margin-right: 15px;
-    margin-left: 5px;
 }
 
 #tray {
-   margin-right:10px;
-   margin-left: 5px;
+   margin-right:8px;
 }
 
 #custom-network {
@@ -145,24 +154,19 @@ window {
 }
 #custom-pacman {
 	margin-right: 10px;
-	margin-left: -4px;
 	color: white;
 	font-size:14px;
 }
 #custom-settings {
-	margin-right: 5px;
-	margin-left: 10px;
+	margin-right: 10px;
 	color: white;
 }
+
 #custom-weather {
    font-size: 13px;
    color: white;
 }
-#custom-disks {
-    margin-right: 10px;
-    color: white;
-    font-size: 14px;
-}
+
 
 #custom-lockscreen {
    margin-right: 12px;
@@ -179,7 +183,7 @@ window {
 #custom-keybinds {
    color:white;
    font-size: 14px;
-   margin-left: 10px;
+   margin-right: 10px;
 
 }
 #custom-launcher {
@@ -188,17 +192,7 @@ window {
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    margin-right: 15px;
-    margin-left: 10px;
+    margin-left: 15px;
 }
 
-#language {
-    color:white;
-    margin-left: 10px;
-}
 
-#custom-keyboard-icon {
-    color:white;
-    font-size: 14px;
-    margin-right: 10px;
-}

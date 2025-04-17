@@ -27,8 +27,6 @@
        "tray",
        "custom/lockscreen",
        "custom/pacman",
-       "custom/disks",
-       "custom/keyboard-icon",
        "custom/keyboard",
        "custom/network",
        "wireplumber",
