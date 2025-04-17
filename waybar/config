@@ -28,6 +28,7 @@
        "custom/lockscreen",
        "custom/pacman",
        "custom/disks",
+       "custom/keyboard-icon",
        "custom/keyboard",
        "custom/network",
        "wireplumber",
@@ -38,13 +39,12 @@
        "custom/shutdown"
       ],
 
-"custom/spacer-tray-aware": {
-  "exec": "~/.config/waybar/modules/detech_tray.sh",
-  "interval": 5,
-  "return-type": "json",
-  "format": "{}",
-  "on-click": "echo noop"
+"custom/keyboard-icon": {
+  "format": "󰌌",
+  "tooltip": false,
+  "on-click": "~/.config/waybar/modules/keyboard.sh"
 },
+
 
 "custom/keybinds": {
    "format": "󰘳"
@@ -58,10 +58,6 @@
 
 "custom/lockscreen": {
    "format": ""
-},
-
-"custom/keyboard": {
-   "format": "󰌌"
 },
 
 "custom/disks": {

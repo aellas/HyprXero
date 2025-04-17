@@ -192,14 +192,13 @@ window {
     margin-left: 10px;
 }
 
-#custom-trayspacer {
-  padding: 0 6px;
-  color: @text;
+#language {
+    color:white;
+    margin-left: 10px;
 }
 
-
-/* Hide spacer if the tray before it is empty */
-.tray.empty ~ #custom-trayspacer {
-  color: transparent;
-  padding: 0;
+#custom-keyboard-icon {
+    color:white;
+    font-size: 14px;
+    margin-right: 10px;
 }
