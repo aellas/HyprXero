@@ -185,8 +185,8 @@ window {
 
 }
 #custom-launcher {
-    font-size: 21px;
-    background-image: url('/home/array/.config/waybar/modules/xero.png');
+    font-size: 32px;
+    background-image: url("xero.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
