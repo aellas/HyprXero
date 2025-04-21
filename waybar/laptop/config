@@ -29,6 +29,7 @@
         "custom/keyboard",
         "custom/network",
         "wireplumber",
+        "battery",
         "custom/spacer1",
         "custom/keybinds",
         "custom/settings",
