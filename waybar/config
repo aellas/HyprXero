@@ -31,7 +31,7 @@
         "wireplumber",
         "custom/spacer1",
         "custom/keybinds",
-        "custom/settings",
+        "custom/toolkit",
         "custom/shutdown"
     ],
 
@@ -72,8 +72,9 @@
 },
 
 
-    "custom/settings": {
-        "format": "󱌢"
+    "custom/toolkit": {
+        "format": "󱌢",
+	"on-click": "kitty xero-cli -m"
     },
 
     "custom/network": {
