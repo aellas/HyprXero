@@ -37,14 +37,14 @@
 
     "custom/keybinds": {
         "format": "󰘳",
-        "on-click": "~/.config/scripts/rofi/search_keybinds.sh"
+        "on-click": "~/.config/waybar/modules/search_keybinds.sh"
     },
 
     "custom/launcher": {
         // "format":"<U+F44E>",
         "format": "   ",
         "tooltip": false,
-	"on-click": "rofi -show drun",
+	"on-click": "rofi -show drun"
 
     },
 

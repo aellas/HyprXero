@@ -44,7 +44,22 @@
         // "format":"<U+F44E>",
         "format": "   ",
         "tooltip": false,
-        "on-click": "rofi -show drun",
+        "on-click": "rofi -show drun"
+    },
+
+    "custom/lock-toggle": {
+        "format": "{}",
+        "exec": "~/.config/waybar/lock_toggle_status.sh",
+        "interval": 5,
+        "on-click": "~/.config/waybar/lock_toggle.sh"
+    },
+
+    "custom/lockscreen": {
+        "format": ""
+    },
+
+    "custom/disks": {
+        "format": "󰋊"
     },
 
 
@@ -141,18 +156,24 @@
         "show-passive-items": "true"
     },
 
+    "custom/color": {
+        "format": "  ",
+        "on-click": "hyprpicker -a -f hex",
+        "on-click-right": "hyprpicker -a -f rgb"
+    },
+
     "custom/shutdown": {
         "format": "",
         "on-click": "wlogout"  // Use wlogout for shutdown action
     },
 
 "custom/pacman": {
-    "format": "{}",
-    "interval": 500,
-    "exec": "~/.config/waybar/modules/check_updates.sh",
-    "exec-if": "exit 0",
+    "format": "󰚰 {}",
+    "interval": 3600,                    
+    "exec": "checkupdates | wc -l",       
+    "exec-if": "exit 0",                  
     "on-click": "kitty -e /usr/local/bin/upd",
-    "signal": 8,
+    "signal": 8
 },
 
     "battery": {
