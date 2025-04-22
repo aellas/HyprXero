@@ -166,7 +166,7 @@
 
     "custom/shutdown": {
         "format": "",
-        "on-click": "hyprctl dispatch exit"
+        "on-click": "wlogout"
     },
 
     "custom/pacman": {
