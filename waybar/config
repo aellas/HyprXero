@@ -44,7 +44,8 @@
         // "format":"<U+F44E>",
         "format": "   ",
         "tooltip": false,
-        "on-click": "exec nwg-drawer -mb 10 -mt 5 -mr 10 -ml 10"
+	"on-click": "nwg-menu -ha left -va top -mb 0 -mt 5 -ml 5 -mr 0",
+
     },
 
     "custom/lock-toggle": {

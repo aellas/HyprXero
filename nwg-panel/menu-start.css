@@ -1,0 +1,44 @@
+window {
+    background-color: rgba(40, 42, 54, 0.95); /* Dracula background */
+    color: #f8f8f2; /* Dracula foreground */
+    border-radius: 12px;
+    padding: 10px;
+}
+
+list {
+    background: none;
+    border-radius: 12px;
+    padding: 5px;
+}
+
+entry {
+    background-color: rgba(68, 71, 90, 0.6); /* selection background-ish */
+    border: none;
+    padding: 6px 10px;
+    border-radius: 8px;
+    color: #f8f8f2;
+}
+
+entry:focus {
+    background-color: rgba(189, 147, 249, 0.3); /* subtle lavender when focused */
+    outline: none;
+}
+
+button {
+    background: none;
+    border: none;
+    color: #f8f8f2;
+    padding: 6px 10px;
+    border-radius: 8px;
+}
+
+button:hover {
+    background-color: rgba(189, 147, 249, 0.2); /* Dracula purple hover */
+    color: #ffffff;
+}
+
+button:focus {
+    background-color: rgba(255, 121, 198, 0.3); /* pinkish focus */
+    outline: none;
+}
+
