@@ -86,7 +86,6 @@
     },
 
     "network": {
-        "interface": "wlan0",
         "format": "{bandwidthDownBits}  {bandwidthUpBytes}",
         "format-ethernet": "{ipaddr}/{cidr} 󰊗",
         "format-wifi": "<span>  {bandwidthDownBytes}</span ><span>    {bandwidthUpBytes}</span>",
@@ -168,9 +167,9 @@
     },
 
 "custom/pacman": {
-    "format": "󰚰 {}",
-    "interval": 3600,                    
-    "exec": "checkupdates | wc -l",       
+    "format": "{}",
+    "interval": 500,                    
+    "exec": "~/.config/waybar/modules/check_updates.sh",
     "exec-if": "exit 0",                  
     "on-click": "kitty -e /usr/local/bin/upd",
     "signal": 8

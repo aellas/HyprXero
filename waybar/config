@@ -24,7 +24,6 @@
         "network",
         "custom/spacer",
         "tray",
-        "custom/lock-toggle",
         "custom/pacman",
         "custom/keyboard",
         "custom/network",
@@ -72,7 +71,6 @@
     },
 
     "network": {
-        "interface": "wlan0",
         "format": "{bandwidthDownBits}  {bandwidthUpBytes}",
         "format-ethernet": "{ipaddr}/{cidr} 󰊗",
         "format-wifi": "<span>  {bandwidthDownBytes}</span ><span>    {bandwidthUpBytes}</span>",

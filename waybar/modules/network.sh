@@ -5,7 +5,7 @@ INTERFACE=$(ip route | awk '/default/ {print $5}' | head -n1)
 
 # Get interface type
 if [[ "$INTERFACE" =~ ^e(n|th) ]]; then
-    ICON="󰈁"  # Ethernet
+    ICON="󰈀"  # Ethernet
     TYPE="Ethernet"
 elif [[ "$INTERFACE" =~ ^w ]]; then
     ICON="󰖩"  # Wi-Fi
