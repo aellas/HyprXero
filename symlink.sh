@@ -32,7 +32,7 @@ for font in "$dotfiles_dir/fonts"/*; do
 done
 
 # Symlink for other directories, excluding themes and fonts
-for dir in hypr waybar kitty rofi wlogout mako; do
+for dir in hypr waybar kitty rofi wlogout swaync; do
   target="$dotfiles_dir/$dir"
   link="$HOME/.config/$dir"
   create_symlink "$target" "$link"
