@@ -41,7 +41,6 @@
     },
 
     "custom/launcher": {
-        // "format":"<U+F44E>",
         "format": "   ",
         "tooltip": false,
 	"on-click": "rofi -show drun"
@@ -78,7 +77,7 @@
         "format-ethernet": "{ipaddr}/{cidr} 󰊗",
         "format-wifi": "<span>  {bandwidthDownBytes}</span ><span>    {bandwidthUpBytes}</span>",
 
-        "format-disconnected": "", //An empty format will hide the module.
+        "format-disconnected": "",
         "tooltip-format": "{ifname} via {gwaddr} 󰊗",
         "tooltip-format-wifi": "{essid} ({signalStrength}%) ",
         "tooltip-format-ethernet": "{ifname} ",
