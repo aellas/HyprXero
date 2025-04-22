@@ -72,9 +72,8 @@
 
     "network": {
         "format": "{bandwidthDownBits}  {bandwidthUpBytes}",
-        "format-ethernet": "{ipaddr}/{cidr} 󰊗",
+        "format-ethernet": "<span>  {bandwidthDownBytes}</span ><span>    {bandwidthUpBytes}</span>",
         "format-wifi": "<span>  {bandwidthDownBytes}</span ><span>    {bandwidthUpBytes}</span>",
-
         "format-disconnected": "",
         "tooltip-format": "{ifname} via {gwaddr} 󰊗",
         "tooltip-format-wifi": "{essid} ({signalStrength}%) ",

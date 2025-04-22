@@ -87,7 +87,7 @@
 
     "network": {
         "format": "{bandwidthDownBits}  {bandwidthUpBytes}",
-        "format-ethernet": "{ipaddr}/{cidr} 󰊗",
+        "format-ethernet": "<span>  {bandwidthDownBytes}</span ><span>    {bandwidthUpBytes}</span>",
         "format-wifi": "<span>  {bandwidthDownBytes}</span ><span>    {bandwidthUpBytes}</span>",
 
         "format-disconnected": "", //An empty format will hide the module.
@@ -183,7 +183,7 @@
             "critical": 15
         },
         "format": "{icon}",
-        "format-icons": ["", "", "", "", ""],
+        "format-icons": ["󰁺", "󰁼", "󰁾", "󰂁", "󰁹"],
         "format-charging": "󱐋 {icon}",
         "max-length": 25
     },
