@@ -37,7 +37,7 @@
 
     "custom/keybinds": {
         "format": "󰘳",
-        "on-click": "~/.config/scripts/rofi/search_keybinds.sh"
+        "on-click": "~/.config/waybar/modules/search_keybinds.sh"
     },
 
     "custom/launcher": {
@@ -45,21 +45,6 @@
         "format": "   ",
         "tooltip": false,
         "on-click": "rofi -show drun",
-    },
-
-    "custom/lock-toggle": {
-        "format": "{}",
-        "exec": "~/.config/waybar/lock_toggle_status.sh",
-        "interval": 5,
-        "on-click": "~/.config/waybar/lock_toggle.sh"
-    },
-
-    "custom/lockscreen": {
-        "format": ""
-    },
-
-    "custom/disks": {
-        "format": "󰋊"
     },
 
 
@@ -154,12 +139,6 @@
         "icon-size": 16,
         "spacing": 8,
         "show-passive-items": "true"
-    },
-
-    "custom/color": {
-        "format": "  ",
-        "on-click": "hyprpicker -a -f hex",
-        "on-click-right": "hyprpicker -a -f rgb"
     },
 
     "custom/shutdown": {

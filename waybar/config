@@ -48,21 +48,6 @@
 
     },
 
-    "custom/lock-toggle": {
-        "format": "{}",
-        "exec": "~/.config/waybar/lock_toggle_status.sh",
-        "interval": 5,
-        "on-click": "~/.config/waybar/lock_toggle.sh"
-    },
-
-    "custom/lockscreen": {
-        "format": ""
-    },
-
-    "custom/disks": {
-        "format": "󰋊"
-    },
-
 
     "custom/weather": {
     "format": "{}°C",
@@ -158,11 +143,6 @@
         "show-passive-items": "true"
     },
 
-    "custom/color": {
-        "format": "  ",
-        "on-click": "hyprpicker -a -f hex",
-        "on-click-right": "hyprpicker -a -f rgb"
-    },
 
     "custom/shutdown": {
         "format": "",
