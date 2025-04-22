@@ -167,17 +167,14 @@
         "on-click": "wlogout"  // Use wlogout for shutdown action
     },
 
-    "custom/pacman": {
-        "format": "{icon}",
-        "return-type": "json",
-        "format-icons": {
-            "pending-updates": "",
-            "updated": "  "
-        },
-	    "exec-if": "which waybar-module-pacman-updates",
-            "exec": "waybar-module-pacman-updates --interval-seconds 5 --network-interval-seconds 300",
-            "on-click": "kitty -e /usr/local/bin/upd"
-    },
+"custom/pacman": {
+    "format": "{}",
+    "interval": 500,
+    "exec": "~/.config/waybar/modules/check_updates.sh",
+    "exec-if": "exit 0",
+    "on-click": "kitty -e /usr/local/bin/upd",
+    "signal": 8,
+},
 
     "battery": {
         "bat": "BAT0",
