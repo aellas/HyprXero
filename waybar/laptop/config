@@ -38,7 +38,7 @@
     ],
 
     "custom/swaync": {
-        "tooltip": false,
+        "tooltip": true,
         "format": "{icon}",
         "format-icons": {
           "notification": "<span foreground='red'><sup></sup></span>",
@@ -55,30 +55,30 @@
         "exec": "swaync-client -swb",
         "on-click": "swaync-client -t -sw",
         "on-click-right": "swaync-client -d -sw",
+        "tooltip-format": "Notification Center",
         "escape": true
       },
       
 "custom/screenshot": {
     "format": "󰄀",
-    "on-click": "grim -g \"$(slurp)\" - | satty --filename - --output-filename ~/Pictures/Screenshots/satty-$(date '+%Y%m%d-%H-%M-%S').png"
+    "on-click": "grim -g \"$(slurp)\" - | satty --filename - --output-filename ~/Pictures/Screenshots/satty-$(date '+%Y%m%d-%H-%M-%S').png",
+    "tooltip": true,
+    "tooltip-format": "Screenshot Utility"
+
 },
 
     "custom/keybinds": {
         "format": "󰘳",
-        "on-click": "~/.config/waybar/modules/search_keybinds.sh"
+        "on-click": "~/.config/waybar/modules/search_keybinds.sh",
+        "tooltip": true,
+        "tooltip-format": "Search Keybinds"
     },
 
     "custom/launcher": {
         "format": "   ",
-        "tooltip": false,
-        "on-click": "rofi -show drun"
-    },
-
-    "custom/lock-toggle": {
-        "format": "{}",
-        "exec": "~/.config/waybar/lock_toggle_status.sh",
-        "interval": 5,
-        "on-click": "~/.config/waybar/lock_toggle.sh"
+        "on-click": "rofi -show drun",
+        "tooltip": true,
+        "tooltip-format": "Application Launcher"
     },
 
     "custom/weather": {
@@ -92,7 +92,9 @@
 
     "custom/settings": {
         "format": "󱌢",
-	"on-click": "kitty xero-cli -m"
+	    "on-click": "kitty xero-cli -m",
+        "tooltip": true,
+        "tooltip-format": "Xerotoolkit"
     },
 
     "custom/network": {
@@ -177,7 +179,9 @@
 
     "custom/shutdown": {
         "format": "",
-        "on-click": "wlogout"  // Use wlogout for shutdown action
+        "on-click": "wlogout",
+        "tooltip": true,
+        "tooltip-format": "Power Menu"
     },
 
 "custom/pacman": {
@@ -186,6 +190,8 @@
     "exec": "~/.config/waybar/modules/check_updates.sh",
     "exec-if": "exit 0",                  
     "on-click": "kitty -e /usr/local/bin/upd",
+    "tooltip": true,
+    "tooltip-format": "Update Notification",
     "signal": 8
 },
 
@@ -199,6 +205,8 @@
         "format": "{icon}",
         "format-icons": ["󰁺", "󰁼", "󰁾", "󰂁", "󰁹"],
         "format-charging": "󱐋",
+        "tooltip": true,
+        "tooltip-format": "󰂁 {capacity}%\n {time}\n {power}\n 󰤁 {cycles} \n  {health}",
         "max-length": 25
     },
 
