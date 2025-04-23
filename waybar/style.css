@@ -1,7 +1,7 @@
 /* Mocha Flamingo */
 @define-color accent #9BBFBF;
 @define-color txt #ffffff;
-@define-color bg #212435;
+@define-color bg #222430;
 @define-color bg2 #2f303a;
 
 * {
@@ -14,7 +14,7 @@
 window {
     background: transparent;
     background-color: @bg;
-    border-radius: 12px;
+    border-radius: 14px;
 }
 
 #workspaces {
@@ -64,6 +64,7 @@ window {
     color: #ffffff;
 }
 
+
 #battery.warning {
     color: #ffffff;
     background: none;
@@ -71,18 +72,6 @@ window {
 #battery.critical {
     color: #ffffff; /* force white even if critical */
     background: none; /* remove orange/red background */
-}
-
-
-#custom-arch {
-    min-width: 0;
-    box-shadow: inset 0 -3px transparent;
-    font-size: 10px;
-    padding: 2px 4px;
-    margin: 2px;
-    border-radius: 4px;
-    color: #E2E2E4;
-    margin-left: 6px;
 }
 
 #custom-spacer,
@@ -132,6 +121,7 @@ window {
     box-shadow: inset 0 -3px transparent;
     color: #ffffff;
     font-weight: bold;
+    margin-right: 10px;
 }
 
 #network {
@@ -164,7 +154,7 @@ window {
 	color: white;
 	font-size:14px;
 }
-#custom-toolkit {
+#custom-settings {
 	margin-right: 10px;
 	color: white;
 }
@@ -214,6 +204,6 @@ window {
 
 #custom-swaync {
     color: white;
-    margin-right: 10px;
+    margin-right: 10px;   
 }
 
