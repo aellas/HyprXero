@@ -192,7 +192,7 @@
     "on-click": "kitty -e /usr/local/bin/upd",
     "tooltip": true,
     "tooltip-format": "Update Notification",
-    "signal": 8
+    "signal": 10
 },
     "hyprland/workspaces": {
         "active-only": false,
