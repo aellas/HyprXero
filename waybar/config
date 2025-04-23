@@ -179,7 +179,7 @@
     "exec": "~/.config/waybar/modules/check_updates.sh",
     "exec-if": "exit 0",
     "on-click": "kitty -e /usr/local/bin/upd",
-    "signal": 8,
+    "signal": 8
 },
 
     "battery": {
@@ -191,7 +191,7 @@
         },
         "format": "{icon}",
         "format-icons": ["", "", "", "", ""],
-        "format-charging": "󱐋 {icon}",
+        "format-charging": "󱐋",
         "max-length": 25
     },
 
