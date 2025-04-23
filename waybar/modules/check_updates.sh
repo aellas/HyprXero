@@ -1,6 +1,9 @@
 #!/bin/bash
 
-# Determine package manager: yay, paru, or pacman fallback
+# Fallback icon if no updates
+default_icon=""
+
+# Detect AUR helper or fallback to pacman
 if command -v yay &> /dev/null; then
   aur_helper="yay"
   aur_updates=$(yay -Qua 2>/dev/null | wc -l)
@@ -11,8 +14,8 @@ elif command -v checkupdates &> /dev/null; then
   aur_helper="pacman"
   aur_updates=$(checkupdates 2>/dev/null | wc -l)
 else
-  echo ""  # no supported update tool found
-  exit 1
+  echo "$default_icon"
+  exit 0
 fi
 
 # Flatpak update count
@@ -24,21 +27,24 @@ fi
 # Total updates
 total_updates=$((aur_updates + flatpak_updates))
 
-# Output for Waybar
+# Output result
 if [ "$total_updates" -gt 0 ]; then
   echo " $total_updates"
   notify-send -u normal -i system-software-update "System Updates" "$total_updates updates are available."
 else
-  echo ""
+  echo "$default_icon"
 fi
 
-# Refresh DBs silently
-if [ "$aur_helper" = "yay" ] || [ "$aur_helper" = "paru" ]; then
-  $aur_helper -Syy >/dev/null 2>&1
+# 🔄 Refresh package databases — no --noconfirm
+if [ "$aur_helper" = "yay" ]; then
+  yay -Syy >/dev/null 2>&1
+elif [ "$aur_helper" = "paru" ]; then
+  paru -Syy >/dev/null 2>&1
 elif [ "$aur_helper" = "pacman" ]; then
-  pacman -Syy >/dev/null 2>&1
+  sudo pacman -Syy >/dev/null 2>&1
 fi
 
+# Refresh flatpak appstream data
 if command -v flatpak &> /dev/null; then
   flatpak update --appstream -y --noninteractive >/dev/null 2>&1
 fi
