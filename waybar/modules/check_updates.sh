@@ -6,9 +6,9 @@ icon_none=""
 
 # Detect update tool and get pacman + AUR updates
 if command -v yay &> /dev/null; then
-  pacman_updates=$(yay -Qua 2>/dev/null | wc -l)
+  pacman_updates=$(yay -Qu 2>/dev/null | wc -l)
 elif command -v paru &> /dev/null; then
-  pacman_updates=$(paru -Qua 2>/dev/null | wc -l)
+  pacman_updates=$(paru -Qu 2>/dev/null | wc -l)
 elif command -v checkupdates &> /dev/null; then
   pacman_updates=$(checkupdates 2>/dev/null | wc -l)
 else
