@@ -69,7 +69,7 @@
 
     "custom/keybinds": {
         "format": "󰘳",
-        "on-click": "~/.config/waybar/modules/search_keybinds.sh",
+        "on-click": "~/.config/waybar/modules/keybinds.sh",
         "tooltip": true,
         "tooltip-format": "Search Keybinds"
     },
@@ -186,14 +186,15 @@
 
 "custom/pacman": {
     "format": "{}",
-    "interval": 500,                    
-    "exec": "~/.config/waybar/modules/check_updates.sh",
-    "exec-if": "exit 0",                  
+    "interval": 500,
+    "restart-interval": 0,
+    "exec": "~/.config/waybar/modules/updates.sh",
     "on-click": "kitty -e /usr/local/bin/upd",
     "tooltip": true,
     "tooltip-format": "Update Notification",
     "signal": 10
 },
+
     "hyprland/workspaces": {
         "active-only": false,
         "all-outputs": true,
