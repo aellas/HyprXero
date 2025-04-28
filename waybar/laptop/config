@@ -69,7 +69,7 @@
 
     "custom/keybinds": {
         "format": "󰘳",
-        "on-click": "~/.config/waybar/modules/search_keybinds.sh",
+        "on-click": "~/.config/waybar/modules/keybinds.sh",
         "tooltip": true,
         "tooltip-format": "Search Keybinds"
     },

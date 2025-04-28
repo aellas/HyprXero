@@ -37,7 +37,7 @@ keybinds=$(grep -E '^\s*bind[d]?\s*=' "$KEYBINDS_FILE" | sed -E 's/^\s*bind[d]?\
 }')
 
 # Launch rofi
-selected=$(echo "$keybinds" | rofi -dmenu -i -p "Hypr Keybinds" -config .config/rofi/configs.rasi)
+selected=$(echo "$keybinds" | rofi -dmenu -i -p "Hypr Keybinds")
 
 # If selected, notify and copy
 if [[ -n "$selected" ]]; then
