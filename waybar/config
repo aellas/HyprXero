@@ -24,13 +24,13 @@
         "network",
         "custom/spacer",
         "tray",
-        "custom/pacman",
         "custom/keyboard",
         "custom/network",
         "wireplumber",
         "battery",
         "custom/spacer1",
 	    "custom/screenshot",
+	    "custom/updates",
         "custom/keybinds",
         "custom/settings",
         "custom/swaync",
@@ -94,14 +94,21 @@
         "format": "󱌢",
 	    "on-click": "kitty xero-cli -m",
         "tooltip": true,
-        "tooltip-format": "Xerotoolkit"
+        "tooltip-format": "XeroLinux Toolkit"
+    },
+
+    "custom/updates": {
+        "format": "",
+	    "on-click": "kitty -e /usr/local/bin/upd",
+        "tooltip": true,
+        "tooltip-format": "Update Checker"
     },
 
     "custom/network": {
         "exec": "~/.config/waybar/modules/network.sh",
         "interval": 10,
         "tooltip": true,
-        "on-click": "nm-connection-editor",
+        "on-click": "kitty -e nmtui",
         "return-type": "json"
     },
 
@@ -183,17 +190,6 @@
         "tooltip": true,
         "tooltip-format": "Power Menu"
     },
-
-"custom/pacman": {
-    "format": "{}",
-    "interval": 500,
-    "restart-interval": 0,
-    "exec": "~/.config/waybar/modules/updates.sh",
-    "on-click": "kitty -e /usr/local/bin/upd",
-    "tooltip": true,
-    "tooltip-format": "Update Notification",
-    "signal": 10
-},
 
     "hyprland/workspaces": {
         "active-only": false,
