@@ -1,11 +1,11 @@
 #!/bin/bash
-#  _   _           _       _             
-# | | | |_ __   __| | __ _| |_ ___  ___  
-# | | | | '_ \ / _` |/ _` | __/ _ \/ __| 
-# | |_| | |_) | (_| | (_| | ||  __/\__ \ 
-#  \___/| .__/ \__,_|\__,_|\__\___||___/ 
-#       |_|                              
-#  
+#  _   _           _       _
+# | | | |_ __   __| | __ _| |_ ___  ___
+# | | | | '_ \ / _` |/ _` | __/ _ \/ __|
+# | |_| | |_) | (_| | (_| | ||  __/\__ \
+#  \___/| .__/ \__,_|\__,_|\__\___||___/
+#       |_|
+#
 
 script_name=$(basename "$0")
 
@@ -17,9 +17,9 @@ if [ $instance_count -gt 1 ]; then
 fi
 
 
-# ----------------------------------------------------- 
+# -----------------------------------------------------
 # Define threshholds for color indicators
-# ----------------------------------------------------- 
+# -----------------------------------------------------
 
 threshhold_green=0
 threshhold_yellow=25
@@ -29,11 +29,19 @@ install_platform=arch
 # Check if platform is supported
 case $install_platform in
     arch)
-        aur_helper=paru
+        if command -v yay &> /dev/null; then
+          pdates=$(yay -Qu 2>/dev/null | wc -l)
+        elif command -v paru &> /dev/null; then
+          updates=$(paru -Qu 2>/dev/null | wc -l)
+        elif command -v checkupdates &> /dev/null; then
+          updates=$(checkupdates 2>/dev/null | wc -l)
+        else
+          updates=0
+        fi
 
-        # ----------------------------------------------------- 
+        # -----------------------------------------------------
         # Calculate available updates
-        # ----------------------------------------------------- 
+        # -----------------------------------------------------
 
         # flatpak remote-ls --updates
 
@@ -52,6 +60,11 @@ case $install_platform in
         check_lock_files
 
         updates=$(checkupdates | wc -l)
+        if [ "$updates" -gt 0 ]; then
+          notify-send -u normal -i system-software-update "System updates are available."
+        else
+          updates=0
+        fi
     ;;
     fedora)
         updates=$(dnf check-update -q | grep -c ^[a-z0-9])
@@ -61,9 +74,9 @@ case $install_platform in
     ;;
 esac
 
-# ----------------------------------------------------- 
+# -----------------------------------------------------
 # Output in JSON format for Waybar Module custom-updates
-# ----------------------------------------------------- 
+# -----------------------------------------------------
 
 css_class="green"
 

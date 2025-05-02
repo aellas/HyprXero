@@ -98,11 +98,14 @@
     },
 
     "custom/updates": {
-        "format": "",
-	    "on-click": "kitty -e /usr/local/bin/upd",
-        "tooltip": true,
-        "tooltip-format": "Update Checker"
-    },
+    "format": "  {}",
+    "escape": true,
+    "return-type": "json",
+    "exec": "~/.config/waybar/modules/updates.sh",
+    "interval": 900,
+    "on-click": "kitty -e /usr/local/bin/upd",
+    "on-click-right": "~/.config/waybar/modules/software.sh"
+  },
 
     "custom/network": {
         "exec": "~/.config/waybar/modules/network.sh",
