@@ -5,7 +5,6 @@
 # | |_| | |_) | (_| | (_| | ||  __/\__ \
 #  \___/| .__/ \__,_|\__,_|\__\___||___/
 #       |_|
-#
 
 script_name=$(basename "$0")
 
@@ -16,7 +15,6 @@ if [ $instance_count -gt 1 ]; then
     sleep $instance_count
 fi
 
-
 # -----------------------------------------------------
 # Define threshholds for color indicators
 # -----------------------------------------------------
@@ -26,44 +24,35 @@ threshhold_yellow=25
 threshhold_red=100
 install_platform=arch
 
-# Check if platform is supported
+# Ensure updates is always initialized
+updates=0
+
+# -----------------------------------------------------------------------------
+# Check for pacman or checkupdates-with-aur database lock and wait if necessary
+# -----------------------------------------------------------------------------
+check_lock_files() {
+    local pacman_lock="/var/lib/pacman/db.lck"
+    local checkup_lock="${TMPDIR:-/tmp}/checkup-db-${UID}/db.lck"
+
+    while [ -f "$pacman_lock" ] || [ -f "$checkup_lock" ]; do
+        sleep 1
+    done
+}
+
+# -----------------------------------------------------
+# Check for updates based on platform
+# -----------------------------------------------------
+
 case $install_platform in
     arch)
+        check_lock_files
+
         if command -v yay &> /dev/null; then
-          pdates=$(yay -Qu 2>/dev/null | wc -l)
+          updates=$(yay -Qu 2>/dev/null | wc -l)
         elif command -v paru &> /dev/null; then
           updates=$(paru -Qu 2>/dev/null | wc -l)
         elif command -v checkupdates &> /dev/null; then
           updates=$(checkupdates 2>/dev/null | wc -l)
-        else
-          updates=0
-        fi
-
-        # -----------------------------------------------------
-        # Calculate available updates
-        # -----------------------------------------------------
-
-        # flatpak remote-ls --updates
-
-        # -----------------------------------------------------------------------------
-        # Check for pacman or checkupdates-with-aur database lock and wait if necessary
-        # -----------------------------------------------------------------------------
-        check_lock_files() {
-            local pacman_lock="/var/lib/pacman/db.lck"
-            local checkup_lock="${TMPDIR:-/tmp}/checkup-db-${UID}/db.lck"
-
-            while [ -f "$pacman_lock" ] || [ -f "$checkup_lock" ]; do
-                sleep 1
-            done
-        }
-
-        check_lock_files
-
-        updates=$(checkupdates | wc -l)
-        if [ "$updates" -gt 0 ]; then
-          notify-send -u normal -i system-software-update "System updates are available."
-        else
-          updates=0
         fi
     ;;
     fedora)
@@ -73,6 +62,26 @@ case $install_platform in
         updates=0
     ;;
 esac
+
+# -----------------------------------------------------
+# Notify only if updates have changed since last run
+# -----------------------------------------------------
+
+last_count_file="/tmp/.last-update-count"
+last_updates=0
+
+if [ -f "$last_count_file" ]; then
+    last_updates=$(cat "$last_count_file" 2>/dev/null || echo 0)
+fi
+
+if [ "$updates" -gt 0 ] && [ "$updates" -ne "$last_updates" ]; then
+    if [ "$1" != "--check-only" ]; then
+        notify-send -u normal -i system-software-update "System updates are available."
+    fi
+fi
+
+# Save current update count
+printf "%s" "$updates" > "$last_count_file"
 
 # -----------------------------------------------------
 # Output in JSON format for Waybar Module custom-updates
