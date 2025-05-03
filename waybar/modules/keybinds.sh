@@ -33,7 +33,7 @@ keybinds=$(grep -E '^\s*bind[d]?\s*=' "$KEYBINDS_FILE" | sed -E 's/^\s*bind[d]?\
     # If command or action starts with $, strip it for display
     gsub(/^\$/, "", desc)
 
-    print key " + " combo " → " desc
+    print key" + " combo "     " desc
 }')
 
 # Launch rofi
