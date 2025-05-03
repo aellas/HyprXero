@@ -29,16 +29,11 @@
   border: unset;
   border-radius: 1.159rem;
   -gtk-outline-radius: 1.159rem;
-  
 }
 
 .floating-notifications.background .notification-background .notification .notification-content,
 .control-center .notification-background .notification .notification-content {
-/*  border-top: 1px solid rgba(164, 162, 167, 0.15);
-  border-left: 1px solid rgba(164, 162, 167, 0.15);
-  border-right: 1px solid rgba(128, 127, 132, 0.15);
-  border-bottom: 1px solid rgba(128, 127, 132, 0.15);*/
-  background-color: #212435;
+  background-color: #1E1E2E; /* base */
   padding: 0.818rem;
   padding-right: unset;
   margin-right: unset;
@@ -48,7 +43,7 @@
 .control-center .notification-row .notification-background .notification.normal .notification-content label,
 .floating-notifications.background .notification-background .notification.low .notification-content label,
 .floating-notifications.background .notification-background .notification.normal .notification-content label {
-  color: #c7c5d0;
+  color: #cdd6f4; /* text */
 }
 
 .control-center .notification-row .notification-background .notification..notification-content image,
@@ -56,30 +51,30 @@
 .floating-notifications.background .notification-background .notification.low .notification-content image,
 .floating-notifications.background .notification-background .notification.normal .notification-content image {
   background-color: unset;
-  color: #e2e0f9;
+  color: #b4befe; /* lavender */
 }
 
 .control-center .notification-row .notification-background .notification.low .notification-content .body,
 .control-center .notification-row .notification-background .notification.normal .notification-content .body,
 .floating-notifications.background .notification-background .notification.low .notification-content .body,
 .floating-notifications.background .notification-background .notification.normal .notification-content .body {
-  color: #92919a;
+  color: #a6adc8; /* subtext0 */
 }
 
 .control-center .notification-row .notification-background .notification.critical .notification-content,
 .floating-notifications.background .notification-background .notification.critical .notification-content {
-  background-color: #ffb4a9;
+  background-color: #f38ba8; /* red */
 }
 
 .control-center .notification-row .notification-background .notification.critical .notification-content image,
-.floating-notifications.background .notification-background .notification.critical .notification-content image{
+.floating-notifications.background .notification-background .notification.critical .notification-content image {
   background-color: unset;
-  color: #ffb4a9;
+  color: #f38ba8; /* red */
 }
 
 .control-center .notification-row .notification-background .notification.critical .notification-content label,
 .floating-notifications.background .notification-background .notification.critical .notification-content label {
-  color: #680003;
+  color: #11111b; /* crust */
 }
 
 .control-center .notification-row .notification-background .notification .notification-content .summary,
@@ -125,28 +120,27 @@
 
 .control-center .notification-row .close-button:hover,
 .floating-notifications.background .close-button:hover {
-  background-color: rgba(255, 255, 255, 0.15);
+  background-color: rgba(205, 214, 244, 0.15); /* text with opacity */
 }
 
 .control-center {
   border-radius: 1.705rem;
   -gtk-outline-radius: 1.705rem;
-  border-top: 1px solid rgba(164, 162, 167, 0.19);
-  border-left: 1px solid rgba(164, 162, 167, 0.19);
-  border-right: 1px solid rgba(128, 127, 132, 0.145);
-  border-bottom: 1px solid rgba(128, 127, 132, 0.145);
+  border-top: 2px solid rgba(180, 190, 254, 1.0); /* subtext1 */
+  border-left: 2px solid rgba(180, 190, 254, 1.0);
+  border-right: 2px solid rgba(180, 190, 254, 1.0); /* subtext0 */
+  border-bottom: 2px solid rgba(180, 190, 254, 1.0);
   box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.45);
   margin: 7px;
-  background-color: #212435;
+  background-color: #1e1e2e; /* base */
   padding: 1.023rem;
 }
 
 .control-center trough {
-  background-color: #45475a;
+  background-color: transparent;
   border-radius: 9999px;
   -gtk-outline-radius: 9999px;
   min-width: 0.545rem;
-  background-color: transparent;  
 }
 
 .control-center slider {
@@ -154,15 +148,15 @@
   -gtk-outline-radius: 9999px;
   min-width: 0.273rem;
   min-height: 2.045rem;
-  background-color: rgba(199, 197, 208, 0.31);
+  background-color: rgba(205, 214, 244, 0.31); /* text */
 }
 
 .control-center slider:hover {
-  background-color: rgba(199, 197, 208, 0.448);
+  background-color: rgba(205, 214, 244, 0.448);
 }
 
 .control-center slider:active {
-  background-color: #77767e;
+  background-color: #7f849c; /* overlay1 */
 }
 
 /* title widget */
@@ -175,7 +169,7 @@
 .widget-title label {
   font-family: 'Gabarito', 'Lexend', sans-serif;
   font-size: 1.364rem;
-  color: #e4e1e6;
+  color: #cdd6f4; /* text */
   margin-left: 0.941rem;
 }
 
@@ -191,16 +185,16 @@
 .widget-title button label {
   font-family: 'Gabarito', sans-serif;
   font-size: 1.0409rem;
-  color: #e4e1e6;
+  color: #cdd6f4; /* text */
   margin-right: 0.841rem;
 }
 
 .widget-title button:hover {
-  background-color: rgba(128, 128, 128, 0.3);
+  background-color: rgba(166, 173, 200, 0.3); /* subtext0 */
 }
 
 .widget-title button:active {
-  background-color: rgba(128, 128, 128, 0.7);
+  background-color: rgba(166, 173, 200, 0.7);
 }
 
 /* Buttons widget */
@@ -208,8 +202,7 @@
 .widget-buttons-grid {
   border-radius: 1.159rem;
   -gtk-outline-radius: 1.159rem;
-  padding: 0.341rem;
-  background-color: rgba(28, 28, 34, 0.35);
+  background-color: rgba(49, 50, 68, 0.35); /* surface0 */
   padding: unset;
 }
 
@@ -218,11 +211,11 @@
 }
 
 .widget-buttons-grid>flowbox>flowboxchild>button:first-child {
-  margin-left:unset ;
+  margin-left: unset;
 }
 
 .widget-buttons-grid>flowbox>flowboxchild>button {
-  border:none;
+  border: none;
   background-color: unset;
   border-radius: 9999px;
   min-width: 5.522rem;
@@ -232,59 +225,50 @@
 }
 
 .widget-buttons-grid>flowbox>flowboxchild>button label {
-  font-family: "Materials Symbol Rounded";
+  font-family: "Ubuntu Nerd Font SemiBold";
   font-size: 1.3027rem;
-  color: #e4e1e6;
+  color: #cdd6f4; /* text */
 }
 
 .widget-buttons-grid>flowbox>flowboxchild>button:hover {
-  background-color: rgba(128, 128, 128, 0.3);
+  background-color: rgba(166, 173, 200, 0.3); /* subtext0 */
 }
 
 .widget-buttons-grid>flowbox>flowboxchild>button:checked {
-  /* OnePlus McClaren edition Orange accent */
-  background-color: #ff9f34;
+  background-color: #fab387; /* peach */
 }
 
 .widget-buttons-grid>flowbox>flowboxchild>button:checked label {
-  color: #212435;
+  color: #1e1e2e; /* base */
 }
-
 
 /* Volume widget */
 
 .widget-volume {
-  background-color: rgba(28, 28, 34, 0.35);
+  background-color: rgba(49, 50, 68, 0.35); /* surface0 */
   padding: 8px;
   margin: 8px;
-  -gtk-outline-radius: 1.159rem;
   -gtk-outline-radius: 1.159rem;
 }
 
 .widget-volume trough {
-  /* OnePlus McClaren edition Orange accent */
-  border:unset;
-  background-color: rgba(128, 128, 128, 0.4);
+  border: unset;
+  background-color: rgba(166, 173, 200, 0.4); /* subtext0 */
 }
 
-
 .widget-volume trough slider {
-  /* OnePlus McClaren edition Orange accent */
-  color:unset;
-  background-color: #ff9f34;
+  background-color: #fab387; /* peach */
   border-radius: 100%;
   min-height: 1.25rem;
 }
 
-
 /* Mpris widget */
 
 .widget-mpris {
-  /*background-color: rgba(28, 28, 34, 0.35);*/
   padding: 8px;
-  margin: 8px;  
+  margin: 8px;
   border-radius: 1.159rem;
-  -gtk-outline-radius: 1.159rem;  
+  -gtk-outline-radius: 1.159rem;
 }
 
 .widget-mpris-player {
