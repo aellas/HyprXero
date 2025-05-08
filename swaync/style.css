@@ -1,226 +1,346 @@
-@define-color cc-bg #202027;
-@define-color noti-border-color #32302f;
-@define-color noti-bg #2B2D3C;
-@define-color noti-bg-darker transparent;
-@define-color noti-bg-hover rgb(27, 27, 43);
-@define-color noti-bg-focus rgba(27, 27, 27, 0.6);
-@define-color text-color #FAFAFA;
-@define-color text-color-disabled #bdae93;
-@define-color bg-selected #fabd2f;
- 
-* {
-    font-family: JetBrainsMono NFP;
-    font-weight: bold;
-	font-size: 14px;
+fonts {
+  font-family: Ubuntu Nerd Font;
 }
- 
+
+
+/* ── 5. Sliders (Volume, Backlight) ─────────────────────────────── */
+.widget-volume label, .widget-backlight label {
+  font-size: 24px;
+  color: #ffffff;
+  min-width: 24px;
+  margin-right: 14px;
+}
+scale trough {
+  min-height: 12px;
+  border-radius: 6px;
+  background-color: #3C3C46;
+}
+scale trough progress {
+  min-height: 12px;
+  border-radius: 6px;
+  background-color: #ffffff;
+  transition: background-color 0.15s ease;
+}
+scale:hover trough progress {
+  background-color: #3C3C46;
+}
+trough highlight {
+  padding: 5px;
+  background: #9DA2FF;
+  border-radius: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+  transition: all 0.7s ease;
+}
+scale slider {
+  min-width: 8px;
+  min-height: 8px;
+  border-radius: 20px;
+  background-color: #3C3C46;
+}
+
 .control-center .notification-row:focus,
 .control-center .notification-row:hover {
-    opacity: 1;
-    background: @noti-bg-darker
+  opacity: 1;
+  background: #31313A;
+  color: #D3DAE3;
 }
- 
+
 .notification-row {
-    outline: none;
-    margin: 20px;
-    padding: 0;
+  outline: none;
+  margin: 0px;
+  padding: 0px;
 }
- 
+
 .notification {
-    background: transparent;
-    margin: 0px;
+  background: #31313A;
+  border: 2px solid #9DA2FF;
+  border-radius: 10px;
+  margin: 3px;
+  padding: 5px 10px;
 }
- 
+
 .notification-content {
-    background: @cc-bg;
-    padding: 7px;
-    border-radius: 0px;
-    border: 2px solid #85796f;
-    margin: 0;
+  background: transparent;
 }
- 
+
+.notification-default-action {
+  margin: 0;
+  padding: 0;
+  border-radius: 5px;
+}
+
 .close-button {
-    background: #d79921;
-    color: @noti-bg;
-    text-shadow: none;
-    padding: 0;
-    border-radius: 0px;
-    margin-top: 5px;
-    margin-right: 5px;
+  background: #FF6B6B;
+  color: #27272E;
+  text-shadow: none;
+  padding: 0px;
+  border-radius: 5px;
+  margin-top: 5px;
 }
- 
+
 .close-button:hover {
-    box-shadow: none;
-    background: #fabd2f;
-    transition: all .15s ease-in-out;
-    border: none
+  box-shadow: none;
+  background: #FF8A8A;
+  transition: all 0.15s ease-in-out;
+  border: none;
 }
- 
+
 .notification-action {
-    color: #ebdbb2;
-    border: 2px solid #85796f;
-    border-top: none;
-    border-radius: 0px;
-    background: #32302F;
+  border: 2px solid #9DA2FF;
+  border-top: none;
+  border-radius: 5px;
 }
- 
+
 .notification-default-action:hover,
 .notification-action:hover {
-    color: #ebdbb2;
-    background: #32302F;
+  color: #D3DAE3;
+  background: #3C3C46;
 }
- 
+
+.notification-default-action {
+  border-radius: 5px;
+  margin: 0px;
+}
+
+.notification-default-action:not(:only-child) {
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+
+.notification-action:first-child {
+  border-bottom-left-radius: 10px;
+  background: #3C3C46;
+}
+
+.notification-action:last-child {
+  border-bottom-right-radius: 10px;
+  background: #27272E;
+  border: 2px solid #9DA2FF;
+}
+
+.inline-reply {
+  margin-top: 8px;
+}
+
+.inline-reply-entry {
+  background: #3C3C46;
+  color: #D3DAE3;
+  caret-color: #D3DAE3;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 5px;
+}
+
+.inline-reply-button {
+  margin-left: 4px;
+  background: #27272E;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 5px;
+  color: #D3DAE3;
+}
+
+.inline-reply-button:disabled {
+  background: initial;
+  color: #999;
+  border: 1px solid transparent;
+}
+
+.inline-reply-button:hover {
+  background: #3C3C46;
+}
+
+.image {
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
 .summary {
-	padding-top: 7px;
-    font-size: 13px;
-    color: #ebdbb2;
+  font-size: 16px;
+  font-weight: 700;
+  background: transparent;
+  color: #9DA2FF;
+  text-shadow: none;
 }
- 
+
 .time {
-    font-size: 11px;
-    color: #d79921;
-    margin-right: 24px
+  font-size: 16px;
+  font-weight: 700;
+  background: transparent;
+  color: #9DA2FF;
+  text-shadow: none;
+  margin-right: 18px;
 }
- 
+
 .body {
-    font-size: 12px;
-    color: #ebdbb2;
+  font-size: 15px;
+  font-weight: 400;
+  background: transparent;
+  color: #D3DAE3;
+  text-shadow: none;
 }
- 
+
 .control-center {
-    background: @cc-bg;
-    border: 2px solid #85796f;
-    border-radius: 0px;
+  background: #27272E;
+  border-radius: 35px;
+  border-top-right-radius: 5px;
 }
- 
+
 .control-center-list {
-    background: transparent
+  background: transparent;
 }
- 
+
 .control-center-list-placeholder {
-    opacity: .5
+  opacity: 0.5;
 }
- 
+
 .floating-notifications {
-    background: transparent
+  background: transparent;
 }
- 
+
 .blank-window {
-    background: alpha(black, 0.1)
+  background: alpha(black, 0.1);
 }
- 
+
 .widget-title {
-    color: #F1F1F1;
-    background: @noti-bg-darker;
-    padding: 5px 10px;
-    margin: 10px 10px 5px 10px;
-    font-size: 1.5rem;
-    border-radius: 5px;
+  color: #D3DAE3;
+  background: transparent;
+  padding: 10px 0px 0px 10px;
+  margin: 0 0 0 5px;
+  border-bottom: 2px solid #9DA2FF;
 }
- 
-.widget-title>button {
-    font-size: 1rem;
-    color: @text-color;
-    text-shadow: none;
-    background: @noti-bg;
-    box-shadow: none;
-    border-radius: 5px;
+
+.widget-title > button {
+  color: #D3DAE3;
+  text-shadow: none;
+  background: transparent;
+  box-shadow: none;
+  border: none;
+  border-radius: 10px;
 }
- 
-.widget-title>button:hover {
-    background: #d79921;
-    color: @cc-bg;
+
+.widget-title > button:hover {
+  color: #000;
+  background: #9F7AEA;
 }
- 
+
 .widget-dnd {
-    background: @noti-bg-darker;
-    padding: 5px 10px;
-    margin: 5px 10px 10px 10px;
-    border-radius: 5px;
-    font-size: large;
-    color: #F1F1F1;
+  background: transparent;
+  padding: 15px 0 0 0;
+  margin: 0 15px;
+  border-radius: 15px;
+  font-size: medium;
+  color: #D3DAE3;
 }
- 
-.widget-dnd>switch {
-    border-radius: 4px;
-    background: #CBA6F7;
+
+.widget-dnd > switch {
+  border-radius: 15px;
+  background: #3C3C46;
 }
- 
-.widget-dnd>switch:checked {
-    background: #d79921;
-    border: 1px solid #d79921;
+
+.widget-dnd > switch:checked {
+  background: #9F7AEA;
+  border: 1px solid #9DA2FF;
 }
- 
-.widget-dnd>switch slider {
-    background: @noti-bg;
-    border-radius: 5px
+
+.widget-dnd > switch slider,
+.widget-dnd > switch:checked slider {
+  background: #D3DAE3;
+  border-radius: 15px;
 }
- 
-.widget-dnd>switch:checked slider {
-    background: @noti-bg;
-    border-radius: 5px
-}
- 
+
 .widget-label {
-    margin: 10px 10px 5px 10px;
+  margin: 10px 10px 5px 10px;
 }
- 
-.widget-label>label {
-    font-size: 1rem;
-    color: @text-color;
+
+.widget-label > label {
+  font-size: 1rem;
+  color: #D3DAE3;
 }
- 
+
 .widget-mpris {
-    color: @text-color;
-    padding: 5px 10px 0px 0px;
-    margin: 5px 10px 5px 10px;
-    border-radius: 0px;
+  color: #D3DAE3;
+  background: transparent;
+  border-radius: 10px;
 }
- 
+
 .widget-mpris > box > button {
-    border-radius: 5px;
+  border-radius: 10px;
+  color: #D3DAE3;
 }
- 
+
 .widget-mpris-player {
-    padding: 5px 10px;
-    margin: 10px
+  color: #D3DAE3;
+  padding: 5px 10px;
+  margin: 10px;
+  opacity: 0.8;
 }
- 
+
 .widget-mpris-title {
-    font-weight: 700;
-    font-size: 1.25rem
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #ffffff;
 }
- 
+
 .widget-mpris-subtitle {
-    font-size: 1.1rem
+  font-size: 1rem;
+  color: #ffffff;
 }
- 
+
 .widget-buttons-grid {
-    font-size: x-large;
-    padding: 5px;
-    margin: 5px 10px 10px 10px;
-    border-radius: 5px;
-    background: @noti-bg-darker;
+  font-size: x-large;
+  padding-left: 34px;
+  border-radius: 4px;
+  background: transparent;
 }
- 
-.widget-buttons-grid>flowbox>flowboxchild>button {
-    margin: 3px;
-    background: @noti-bg;
-    border-radius: 5px;
-    color: @text-color
+
+.widget-buttons-grid > flowbox > flowboxchild > button {
+  font-size: 20px;
+  background: #3C3C46;
+  border: none;
+  border-radius: 8px;
+  color: #D3DAE3;
+  min-width: 24px;
+  min-height: 24px;
 }
- 
-.widget-buttons-grid>flowbox>flowboxchild>button:hover {
-    background: #d79921;
-    color: @noti-bg;
+
+.widget-buttons-grid > flowbox > flowboxchild > button image {
+  min-width: 28px;
+  min-height: 28px;
 }
- 
-.widget-menubar>box>.menu-button-bar>button {
-    border: none;
-    background: transparent
+
+.widget-buttons-grid > flowbox > flowboxchild > button:hover {
+  background: #9DA2FF;
+  color: #27272E;
 }
- 
-.topbar-buttons>button {
-    border: none;
-    background: transparent
+
+.widget-buttons-grid > flowbox > flowboxchild > button:checked {
+  background: #9F7AEA;
+  color: #27272E;
+}
+
+.widget-menubar > box > .menu-button-bar > button {
+  border: none;
+  background: transparent;
+}
+
+.topbar-buttons > button {
+  border: none;
+  background: transparent;
+}
+
+.widget-volume {
+  background: transparent;
+  padding: 10px 5px 5px;
+  margin: 5px 10px;
+  font-size: 2rem;
+  color: #9F7AEA;
+  border-top: 2px solid;
+  border-color: #3C3C46;
+}
+
+.widget-backlight {
+  background: transparent;
+  padding: 5px;
+  margin: 5px 10px;
+  font-size: 2rem;
+  color: #9DA2FF;
 }
