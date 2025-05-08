@@ -75,7 +75,7 @@
     },
 
     "custom/launcher": {
-        "format": "   ",
+        "format": " ",
         "on-click": "rofi -show drun",
         "tooltip": true,
         "tooltip-format": "Application Launcher"
@@ -101,7 +101,7 @@
     "format": "  {}",
     "escape": true,
     "return-type": "json",
-    "exec": "bash -c '~/.config/waybar/modules/updates.sh'",
+    "exec": "~/.config/waybar/modules/updates.sh",
     "interval": 900,
     "on-click": "kitty -e /usr/local/bin/upd",
     "on-click-right": "~/.config/waybar/modules/software.sh"

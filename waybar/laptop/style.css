@@ -197,11 +197,7 @@ window {
 
 }
 #custom-launcher {
-    font-size: 32px;
-    background-image: url("xero.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+    font-size: 18px;
     margin-left: 15px;
 }
 

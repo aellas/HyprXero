@@ -75,7 +75,7 @@
     },
 
     "custom/launcher": {
-        "format": "   ",
+        "format": " ",
         "on-click": "rofi -show drun",
         "tooltip": true,
         "tooltip-format": "Application Launcher"
@@ -97,12 +97,13 @@
         "tooltip-format": "XeroLinux Toolkit"
     },
 
+
     "custom/updates": {
     "format": "  {}",
     "escape": true,
     "return-type": "json",
     "exec": "~/.config/waybar/modules/updates.sh",
-    "interval": 1,
+    "interval": 600,
     "on-click": "kitty -e /usr/local/bin/upd",
     "on-click-right": "~/.config/waybar/modules/software.sh"
   },
