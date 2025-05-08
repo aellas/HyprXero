@@ -5,3 +5,4 @@ push.sh
 *.log
 node_modules/
 .deploy*/
+hypr/config/input.conf

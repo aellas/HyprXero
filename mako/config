@@ -1,0 +1,34 @@
+# ~/.config/mako/config
+
+# Geometry & appearance
+anchor=top-right
+margin=10
+padding=12
+border-size=2
+border-color=#3c3c4c
+border-radius=16
+default-timeout=5000
+
+# Background & foreground
+background-color=#1e1e2e
+text-color=#ffffff
+
+# Font
+font=JetBrains Mono 10
+
+# Width and height
+max-icon-size=64
+
+# Icons
+icons=true
+
+# Text layout
+markup=true
+format=<b>%s</b>\n%b
+
+# Shadow simulation using border + padding (no real shadows in Mako)
+separator-color=#2a2a3a
+separator-height=1
+
+# Progress bar
+progress-color=#5294e2
