@@ -1,5 +1,6 @@
 fonts {
   font-family: Ubuntu Nerd Font;
+  font-weight: 300;
 }
 
 
@@ -71,7 +72,7 @@ scale slider {
 
 .close-button {
   background: #FF6B6B;
-  color: #27272E;
+  color: #31313A;
   text-shadow: none;
   padding: 0px;
   border-radius: 5px;
@@ -114,7 +115,7 @@ scale slider {
 
 .notification-action:last-child {
   border-bottom-right-radius: 10px;
-  background: #27272E;
+  background: #31313A;
   border: 2px solid #9DA2FF;
 }
 
@@ -179,7 +180,7 @@ scale slider {
 }
 
 .control-center {
-  background: #27272E;
+  background: #31313A;
   border-radius: 35px;
   border-top-right-radius: 5px;
 }
@@ -219,7 +220,7 @@ scale slider {
 
 .widget-title > button:hover {
   color: #000;
-  background: #9F7AEA;
+  background: #9DA2FF;
 }
 
 .widget-dnd {
@@ -227,7 +228,8 @@ scale slider {
   padding: 15px 0 0 0;
   margin: 0 15px;
   border-radius: 15px;
-  font-size: medium;
+  font-size: 16px;
+  font-weight: 600;
   color: #D3DAE3;
 }
 
@@ -237,7 +239,7 @@ scale slider {
 }
 
 .widget-dnd > switch:checked {
-  background: #9F7AEA;
+  background: #9DA2FF;
   border: 1px solid #9DA2FF;
 }
 
@@ -275,7 +277,7 @@ scale slider {
 }
 
 .widget-mpris-title {
-  font-weight: 700;
+  font-weight: 900;
   font-size: 1.25rem;
   color: #ffffff;
 }
@@ -313,7 +315,7 @@ scale slider {
 }
 
 .widget-buttons-grid > flowbox > flowboxchild > button:checked {
-  background: #9F7AEA;
+  background: #9DA2FF;
   color: #27272E;
 }
 
@@ -332,7 +334,7 @@ scale slider {
   padding: 10px 5px 5px;
   margin: 5px 10px;
   font-size: 2rem;
-  color: #9F7AEA;
+  color: #9DA2FF;
   border-top: 2px solid;
   border-color: #3C3C46;
 }

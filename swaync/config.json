@@ -21,13 +21,12 @@
   "hide-on-action": true,
   "script-fail-notify": true,
   "widgets": [
-    "dnd",
-    "title",    
-    "notifications",    
-    "mpris",
+    "buttons-grid",
     "volume",
-    "backlight",
-    "buttons-grid"
+    "mpris",
+    "title",
+    "dnd",
+    "notifications"
   ],
   "widget-config": {
     "title": {
@@ -38,13 +37,9 @@
     "dnd": {
       "text": "Do Not Disturb"
     },
-    "label": {
-      "max-lines": 1,
-      "text": "Notification Center"
-    },
     "mpris": {
-      "image-size": 100,
-      "image-radius": 5
+      "image-size": 96,
+      "image-radius": 6
     },
     "volume": {
       "label": "󰕾 "
@@ -58,7 +53,7 @@
     "buttons-grid": {
       "actions": [
         {
-          "label": "󰐥",
+          "label": "",
           "command": "systemctl poweroff"
         },
         {
