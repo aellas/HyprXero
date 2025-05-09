@@ -8,7 +8,7 @@
  **/
 
 * {
-    background:     #27272E;       /* dark gray-blue */
+    background:     #31313A;       /* dark gray-blue */
     background-alt: #3C3C46;       /* lighter gray-blue for contrast */
     foreground:     #D3DAE3;       /* soft light gray */
     selected:       #9DA2FF;       /* light purple (accent) */
