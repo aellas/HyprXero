@@ -29,8 +29,8 @@
         "wireplumber",
         "battery",
         "custom/spacer1",
+	    "custom/updates", 
 	    "custom/screenshot",
-	    "custom/updates",
         "custom/keybinds",
         "custom/settings",
         "custom/swaync",
@@ -75,7 +75,7 @@
     },
 
     "custom/launcher": {
-        "format": " ",
+        "format": "",
         "on-click": "rofi -show drun",
         "tooltip": true,
         "tooltip-format": "Application Launcher"
