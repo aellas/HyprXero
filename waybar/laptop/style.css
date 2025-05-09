@@ -1,4 +1,3 @@
-/* Mocha Flamingo */
 @define-color accent #cba6f7;
 @define-color txt #f5e0dc;
 @define-color bg #31313A;
@@ -198,7 +197,7 @@ window {
 }
 #custom-launcher {
     font-size: 18px;
-    margin-left: 15px;
+    margin-left: 18px;
 }
 
 #custom-lock-toggle {
