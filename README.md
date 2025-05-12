@@ -14,7 +14,7 @@ kitty kvantum ttf-ubuntu-nerd qt5ct qt6ct qt5-wayland qt6-wayland thunar wlogout
 - XeroLinux
 
 ## Main Packages
-- Terminal: kitty
+- Terminal: Kitty
 - Editor: VSCode / Neovim
 - Wallpaper: Waypaper
 - Icons: Tela Circle Purple
@@ -25,7 +25,7 @@ kitty kvantum ttf-ubuntu-nerd qt5ct qt6ct qt5-wayland qt6-wayland thunar wlogout
 - Bar: Waybar
 - Screenlock: Hyprlock
 - Idle Manager: Hypridle
-- Logout: wlogout
+- Logout: Wlogout
 - Screenshot: Grim/Slurp + Swappy
 
 ## Main Keybinds 
