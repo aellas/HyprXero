@@ -4,7 +4,7 @@
 }
 
 window {
-    background-color: #27272E; /* Dracula background color */
+    background-color: rgba(49, 49, 58, 0.6); /* Dracula background color */
 }
 
 button {
@@ -12,17 +12,17 @@ button {
     border-color: #9DA2FF; /* Dracula green */
     text-decoration-color: #f8f8f2; /* Dracula foreground color */
     color: #f8f8f2; /* Dracula foreground color */
-    background-color: #282a36; /* Dracula background color */
+    background-color: rgba(49, 49, 58, 0.9); /* Dracula background color */
     border-style: solid;
     border-width: 2px;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 25%;
-        margin: 10px;
+    background-size: 15%;
+        margin: 15px;
 }
 
 button:focus, button:active, button:hover {
-    background-color: #9F7AEA; /* Default button bg again */ /* Dracula purple */
+    background-color: #9DA2FF; /* Default button bg again */ /* Dracula purple */
     outline-style: none;
         transition: background-color 0.2s ease;
 }

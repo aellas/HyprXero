@@ -8,13 +8,14 @@ fonts {
 .widget-volume label, .widget-backlight label {
   font-size: 24px;
   color: #ffffff;
+
   min-width: 24px;
   margin-right: 14px;
 }
 scale trough {
   min-height: 12px;
   border-radius: 6px;
-  background-color: #3C3C46;
+  background-color: #4B4B55;
 }
 scale trough progress {
   min-height: 12px;
@@ -23,7 +24,7 @@ scale trough progress {
   transition: background-color 0.15s ease;
 }
 scale:hover trough progress {
-  background-color: #3C3C46;
+  background-color: #7C4DFF;
 }
 trough highlight {
   padding: 5px;
@@ -36,13 +37,13 @@ scale slider {
   min-width: 8px;
   min-height: 8px;
   border-radius: 20px;
-  background-color: #3C3C46;
+  background-color: #7C4DFF;
 }
 
 .control-center .notification-row:focus,
 .control-center .notification-row:hover {
   opacity: 1;
-  background: rgba(49, 49, 58, 0.6);
+  background: rgba(49, 49, 58, 0.);
   color: #D3DAE3;
 }
 
@@ -335,8 +336,7 @@ scale slider {
   margin: 5px 10px;
   font-size: 2rem;
   color: #9DA2FF;
-  border-top: 2px solid;
-  border-color: #3C3C46;
+  border-color: #7C4DFF;
 }
 
 .widget-backlight {
@@ -344,5 +344,15 @@ scale slider {
   padding: 5px;
   margin: 5px 10px;
   font-size: 2rem;
-  color: #9DA2FF;
+  color: #3C3C46;
+}
+
+.widget-menubar>box>.menu-button-bar>button{
+  border: none;
+  background: transparent;
+}
+
+.topbar-buttons>button{
+  border: none;
+  background: transparent;
 }
