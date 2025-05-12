@@ -111,7 +111,7 @@
         "exec": "~/.config/waybar/modules/network.sh",
         "interval": 10,
         "tooltip": true,
-        "on-click": "kitty -e nmtui",
+        "on-click": "nm-connection-editor",
         "return-type": "json"
     },
 

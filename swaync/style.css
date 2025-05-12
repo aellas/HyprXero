@@ -296,7 +296,7 @@ scale slider {
 }
 
 .widget-buttons-grid > flowbox > flowboxchild > button {
-  font-size: 20px;
+  font-size: 16px;
   background: #3C3C46;
   border: none;
   border-radius: 8px;
