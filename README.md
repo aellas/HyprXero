@@ -1,4 +1,4 @@
-# Testing Configuration
+# <p align="center">HyprXero</p>
 
 ![preview](assets/hyprxero.png?raw=true)
 
