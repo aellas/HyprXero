@@ -1,4 +1,5 @@
 # <p align="center">HyprXero</p>
+> Version 0.1
 
 ![preview](assets/hyprxero.png?raw=true)
 
@@ -26,4 +27,13 @@ kitty kvantum ttf-ubuntu-nerd qt5ct qt6ct qt5-wayland qt6-wayland thunar wlogout
 - Idle Manager: Hypridle
 - Logout: wlogout
 - Screenshot: Grim/Slurp + Swappy
+
+## Main Keybinds 
+| Keybind | Description |
+|---|---|
+| Mod + Enter | Launch Terminal |
+| Mod + Space | Launch Rofi |
+| Mod + B | Open Web Browser |
+| Mod + N | Open Filemanager |
+
 
