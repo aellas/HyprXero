@@ -1,5 +1,7 @@
 # Testing Configuration
 
+![preview](assets/hyprxero.png?raw=true)
+
 ## Required Packages
 ```
 hyprland hypridle hyprlock hyprpolkitagent waybar wl-clipboard swaync nwg-dock-hyprland pyprland wttrbar nwg-look rofi-wayland grim slurp satty swaybg
