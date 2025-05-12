@@ -1,5 +1,4 @@
 # <p align="center">HyprXero</p>
-> Version 0.1
 
 ![preview](assets/hyprxero.png?raw=true)
 
