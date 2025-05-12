@@ -1,6 +1,10 @@
 # Testing Configuration
 
-## Installation
+## Required Packages
+```
+hyprland hypridle hyprlock hyprpolkitagent waybar wl-clipboard swaync nwg-dock-hyprland pyprland wttrbar nwg-look rofi-wayland grim slurp satty swaybg
+kitty kvantum ttf-ubuntu-nerd qt5ct qt6ct qt5-wayland qt6-wayland thunar wlogout pamixer nm-connection-editor pavucontrol falkon
+```
 
 ## Supported Platforms
 
