@@ -32,9 +32,21 @@ kitty kvantum ttf-ubuntu-nerd qt5ct qt6ct qt5-wayland qt6-wayland thunar wlogout
 
 Below are the keybindings for Hyrpland
 
-# Application Launching
-Please note ($modifier) = Mod Key (Windows Button)
+### Application Launching
+*$modifier = Mod Key (Windows Button)*
 - `$modifier + Return` > Launch Terminal
+- `$modifier + B` > Launch Web Browser
+- `$modifier + Space` > Launch Rofi
+- `$modifier + A` > Launch Screenshot
+- `$modifier + N` > Launch Launch Filemanager
+- `$modifier SHIFT + W` > Relaunch Waybar
+
+
+### Window Cycling
+- `Alt + Tab` > Cycle to next window
+- `Alt + Tab` > Bring active window to top
+- `Alt + Tab` > Swap with master (if master layout is used)
+
 
 
 
