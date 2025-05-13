@@ -1,4 +1,4 @@
-# <p align="center"> HyprXero </p>
+# <p align="center"> HyprXero </p>
  <p align="center">A sleek homage to the legendary XeroLinux KDE Rice — now on Hyprland</p>
 
 > [!WARNING]
