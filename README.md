@@ -33,18 +33,21 @@ kitty kvantum ttf-ubuntu-nerd qt5ct qt6ct qt5-wayland qt6-wayland thunar wlogout
 Below are the keybindings for Hyrpland
 
 ### Application Launching
-| Keybind                | Description                |
-| ---------------------- | -------------------------- |
-| `$mainMod + Return`    | Open terminal              |
-| `$mainMod + N`         | Open file manager          |
-| `$mainMod + B`         | Open web browser           |
-| `$mainMod + SPACE`     | Application launcher       |
-| `$mainMod + A`         | Screenshot region          |
-| `$mainMod + C`         | Pick color (hex)           |
-| `$mainMod + SHIFT + P` | Launch calculator          |
-| `$mainMod + SHIFT + W` | Relaunch Waybar            |
-| `$mainMod + SHIFT + T` | Toggle scratchpad terminal |
-| `CTRL + ALT + DELETE`  | Lock screen                |
+**All keybindings follow the $mainMod convention (Mod = Super/Windows key)**
+- `$mainMod + Return` > Launch terminal
+- `$mainMod + Space` > Application launcher
+- `$mainMod + B` > Open web browser
+- `$mainMod + A` > Screenshot region
+- `$mainMod + N` > Open file manager
+- `$mainMod + C` > Pick color (hex)
+- `$mainMod SHIFT + T` > Toggle scratchpad terminal
+- `CTRL + ALT + DELETE` > Lock screen
+
+## Tiling & Floating 
+- `$mainMod + V` > Toggle floating mode
+- `$mainMod + F` > Toggle fullscreen
+- `$mainMod + Y` > Pin window (always visible)
+- `$mainMod + Return` > Launch terminal
 
 ### Window Cycling
 - `Alt + Tab` > Cycle to next window
