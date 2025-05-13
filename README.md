@@ -83,7 +83,7 @@ All keybindings follow the $mainMod convention (Mod = Super/Windows key)
 
 ## FAQ
 <details>
-  <summary>Editing Default Applications</summary>
+  <summary>Changing Default Applications</summary>
 You can edit the defaults used by editing `~/.config/hypr/config/defaults.conf`
 </details>
 
