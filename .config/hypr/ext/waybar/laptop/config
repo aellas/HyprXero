@@ -29,7 +29,7 @@
         "wireplumber",
         "battery",
         "custom/spacer1",
-        "custom/updates",
+	    "custom/updates", 
 	    "custom/screenshot",
         "custom/keybinds",
         "custom/settings",
@@ -37,7 +37,7 @@
         "custom/shutdown"
     ],
 
-    "custom/swaync": {
+"custom/swaync": {
         "tooltip": true,
         "format": "{icon}",
         "format-icons": {
@@ -57,25 +57,24 @@
         "on-click-right": "swaync-client -d -sw",
         "tooltip-format": "Notification Center",
         "escape": true
-      },
-      
+    },
+        
 "custom/screenshot": {
     "format": "󰄀",
     "on-click": "grim -g \"$(slurp)\" - | satty --filename - --output-filename ~/Pictures/Screenshots/satty-$(date '+%Y%m%d-%H-%M-%S').png",
     "tooltip": true,
     "tooltip-format": "Screenshot Utility"
-
 },
 
     "custom/keybinds": {
         "format": "󰘳",
-        "on-click": "~/.config/waybar/modules/keybinds.sh",
+        "on-click": "~/.config/hypr/scripts/waybar/modules/keybinds.sh",
         "tooltip": true,
         "tooltip-format": "Search Keybinds"
     },
 
     "custom/launcher": {
-        "format": " ",
+        "format": "",
         "on-click": "rofi -show drun",
         "tooltip": true,
         "tooltip-format": "Application Launcher"
@@ -97,18 +96,19 @@
         "tooltip-format": "XeroLinux Toolkit"
     },
 
+
     "custom/updates": {
     "format": "  {}",
     "escape": true,
     "return-type": "json",
-    "exec": "~/.config/waybar/modules/updates.sh",
-    "interval": 900,
+    "exec": "~/.config/hypr/scripts/waybar/modules/updates.sh",
+    "interval": 600,
     "on-click": "kitty -e /usr/local/bin/upd",
-    "on-click-right": "~/.config/waybar/modules/software.sh"
+    "on-click-right": "~/.config/hypr/scripts/waybar/modules/software.sh"
   },
 
     "custom/network": {
-        "exec": "~/.config/waybar/modules/network.sh",
+        "exec": "~/.config/hypr/scripts/waybar/modules/network.sh",
         "interval": 10,
         "tooltip": true,
         "on-click": "nm-connection-editor",
@@ -166,7 +166,7 @@
         "on-click": "pavucontrol",
         "on-click-right": "amixer sset Master toggle 1>/dev/null",
         "format": "<span foreground='#FFFFFF'></span>",
-        "format-muted": " ",
+        "format-muted": "",
         "format-source": "",
         "format-source-muted": "",
         "format-icons": {
@@ -189,10 +189,26 @@
 
     "custom/shutdown": {
         "format": "",
-        "on-click": "wlogout",
+        "on-click": "wlogout -l ~/.config/hypr/ext/wlogout/layout -C ~/.config/hypr/ext/wlogout/style.css",
         "tooltip": true,
         "tooltip-format": "Power Menu"
     },
+
+"battery": {
+    "bat": "BAT0",
+    "interval": 5,
+    "states": {
+        "warning": 30,
+        "critical": 15
+    },
+    "format": "{icon}",
+    "format-icons": ["󰁺", "󰁼", "󰁾", "󰂁", "󰁹"],  
+    "format-charging": "󰂇", 
+    "tooltip": true,
+    "tooltip-format": "󰂁 {capacity}%\n {time}\n {power}\n󰤁 {cycles}\n {health}",
+    "max-length": 25
+},
+
 
     "hyprland/workspaces": {
         "active-only": false,

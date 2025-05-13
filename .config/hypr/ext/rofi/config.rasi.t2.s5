@@ -16,8 +16,8 @@ configuration {
 }
 
 /*****----- Global Properties -----*****/
-@import                          "shared/colors.rasi"
-@import                          "shared/fonts-keybinds.rasi"
+@import ".config/hypr/ext/rofi/colors/layan.rasi"
+@import ".config/hypr/ext/rofi/shared/fonts.rasi"
 
 /*****----- Main Window -----*****/
 window {
@@ -93,8 +93,8 @@ entry {
 /*****----- Listview -----*****/
 listview {
     enabled:                     true;
-    columns:                     1;
-    lines:                       10;
+    columns:                     2;
+    lines:                       7;
     cycle:                       true;
     dynamic:                     true;
     scrollbar:                   false;
