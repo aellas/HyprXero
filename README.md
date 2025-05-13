@@ -83,21 +83,10 @@ All keybindings follow the $mainMod convention (Mod = Super/Windows key)
 
 ## FAQ
 <details>
-  <summary>Click to expand!</summary>
-
-  This content is hidden by default.  
-  It shows up when the dropdown is opened.  
-  You can include **Markdown formatting**, like _italics_ or `code`.
-
-  - Lists
-  - Images
-  - Even nested `<details>` (to some extent)
-
+  <summary>**Editing Default Applications**</summary>
+You can edit the defaults used by editing `~/.config/hypr/config/defaults.conf`
 </details>
-**Updating Default Application**
-- You can easily update the default applications by editing `/hypr/config/defaults.conf`
-- Let's say you want to use alacritty instead of kitty
-- edit `$terminal = kitty` to `$terminal = alacritty`
+
 
 
 
