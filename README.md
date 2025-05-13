@@ -31,7 +31,7 @@ Will add later
 - **Screen Lock** ➤ Hyprlock
 - **Idle Manager** ➤ Hypridle
 - **Logout** ➤ Wlogout
-- **Screenshot** ➤ Grim/Slurp + Swappy
+- **Screenshot** ➤ Grim/Slurp + Satty
 
 ## ⌨️ Hyprland Keybinds
 All keybindings follow the `$mainMod` convention (`$mainMod` = Super/Windows key)
