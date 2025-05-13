@@ -6,7 +6,7 @@ This is purely a config file, any issues that are related to Hyprland etc should
 
 ## Required Packages
 ```
-hyprland hypridle hyprlock hyprpolkitagent waybar wl-clipboard swaync nwg-dock-hyprland pyprland wttrbar nwg-look rofi-wayland grim slurp satty swaybg
+hyprland hypridle hyprlock hyprpicker hyprpolkitagent waybar wl-clipboard swaync nwg-dock-hyprland pyprland wttrbar nwg-look rofi-wayland grim slurp satty swaybg
 kitty kvantum ttf-ubuntu-nerd qt5ct qt6ct qt5-wayland qt6-wayland thunar wlogout pamixer nm-connection-editor pavucontrol falkon xlapit-cli
 ```
 
