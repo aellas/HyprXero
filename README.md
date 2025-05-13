@@ -19,7 +19,7 @@ kitty kvantum ttf-ubuntu-nerd qt5ct qt6ct qt5-wayland qt6-wayland thunar wlogout
 Will add later
 
 ## 🛠️ Main Packages
-- **Terminal** *>* Kitty
+- **Terminal:** Kitty
 - **Editor:** VSCode / Neovim
 - **Wallpaper:** Waypaper
 - **Icons:** Tela Circle Purple
