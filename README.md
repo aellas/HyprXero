@@ -1,6 +1,5 @@
 # <p align="center">HyprXero</p>
-> [!CAUTION] 
-This is purely a config file, any issues that are related to Hyprland etc should be raised with Hyprland 
+This is a homage to the legendary XeroLinux KDE
 
 ![preview](assets/hyprxero.png?raw=true)
 
