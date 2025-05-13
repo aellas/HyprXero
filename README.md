@@ -1,5 +1,5 @@
 # <p align="center">HyprXero</p>
-This is a homage to the legendary XeroLinux KDE
+ <p align="center">This is a homage to the legendary XeroLinux KDE</p>
 
 ![preview](assets/hyprxero.png?raw=true)
 
