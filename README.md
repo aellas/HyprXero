@@ -29,11 +29,9 @@ kitty kvantum ttf-ubuntu-nerd qt5ct qt6ct qt5-wayland qt6-wayland thunar wlogout
 - Screenshot: Grim/Slurp + Swappy
 
 ## Hyprland Keybinds
-
-Below are the keybindings for Hyrpland
-
-### Application Launching
 **All keybindings follow the $mainMod convention (Mod = Super/Windows key)**
+
+## Application Launching
 - `$mainMod + Return` > Launch terminal
 - `$mainMod + Space` > Application launcher
 - `$mainMod + B` > Open web browser
