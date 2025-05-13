@@ -119,6 +119,3 @@ All keybindings follow the $mainMod convention (Mod = Super/Windows key)
   </ul>
   Explore the documentation for these external tools to achieve your desired look and feel.
 </details>
-
-
-
