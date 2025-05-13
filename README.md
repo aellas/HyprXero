@@ -33,10 +33,10 @@ Will add later
 - **Logout:** Wlogout
 - **Screenshot:** Grim/Slurp + Swappy
 
-### ⌨️ Hyprland Keybinds
+## ⌨️ Hyprland Keybinds
 All keybindings follow the `$mainMod` convention (`$mainMod` = Super/Windows key)
 
-## 🚀 Application Launching
+### 🚀 Application Launching
 - `$mainMod + Return`: Launch terminal (Kitty)
 - `$mainMod + Space`: Open application launcher (Rofi)
 - `$mainMod + B`: Open web browser (Falkon)
@@ -46,46 +46,46 @@ All keybindings follow the `$mainMod` convention (`$mainMod` = Super/Windows key
 - `$mainMod + Shift + T`: Toggle scratchpad terminal
 - `Ctrl + Alt + Delete`: Lock screen (Hyprlock)
 
-## 🪟 Window Actions
+### 🪟 Window Actions
 - `$mainMod + Q`: Close the active window
 
-## 🧱 Tiling & Floating
+### 🧱 Tiling & Floating
 - `$mainMod + V`: Toggle floating mode for the active window
 - `$mainMod + F`: Toggle fullscreen mode for the active window
 - `$mainMod + Y`: Pin the active window (always visible on top)
 - `$mainMod + J`: Toggle split mode (dwindle layout)
 - `$mainMod + Shift + M`: Swap the Hyprland layout (master layout or dwindle)
 
-## 🔄 Window Cycling
+### 🔄 Window Cycling
 - `Alt + Tab`: Cycle through the next windows
 - `Alt + Shift + Tab`: Cycle through the previous windows
 - `$mainMod + Tab`: Bring the active window to the top
 - `$mainMod + Shift + Space`: Swap the active window with the master window (if the master layout is active)
 
-## Focus Movement
+### Focus Movement
 - `$mainMod + Left Arrow`: Focus on the window to the left
 - `$mainMod + Right Arrow`: Focus on the window to the right
 - `$mainMod + Up Arrow`: Focus on the window above
 - `$mainMod + Down Arrow`: Focus on the window below
 
-## ↔️ Move Windows
+### ↔️ Move Windows
 - `$mainMod + Shift + Left Arrow`: Move the active window to the left
 - `$mainMod + Shift + Right Arrow`: Move the active window to the right
 - `$mainMod + Shift + Up Arrow`: Move the active window upwards
 - `$mainMod + Shift + Down Arrow`: Move the active window downwards
 
-## 📐 Resize
+### 📐 Resize
 - `$mainMod + Ctrl + Shift + H/Left Arrow`: Resize the active window to the left
 - `$mainMod + Ctrl + Shift + L/Right Arrow`: Resize the active window to the right
 - `$mainMod + Ctrl + Shift + K/Up Arrow`: Resize the active window upwards
 - `$mainMod + Ctrl + Shift + J/Down Arrow`: Resize the active window downwards
 - `$mainMod + R` then `H/J/K/L` or `Arrow Keys`: Enter resize mode, press `Esc` to exit
 
-## 🖱️ Mouse Controls
+### 🖱️ Mouse Controls
 - `$mainMod + Left Mouse Button`: Move the active window
 - `$mainMod + Right Mouse Button`: Resize the active window
 
-## Workspaces
+### Workspaces
 - `$mainMod + [1-9, 0]`: Switch to workspace [1-9, 10]
 - `$mainMod + Ctrl + [1-9, 0]`: Move the active window to workspace [1-9, 10] and switch to it
 - `$mainMod + Shift + [1-9, 0]`: Move the active window silently to workspace [1-9, 10]
