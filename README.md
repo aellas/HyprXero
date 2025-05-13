@@ -43,16 +43,41 @@ Below are the keybindings for Hyrpland
 - `$mainMod SHIFT + T` > Toggle scratchpad terminal
 - `CTRL + ALT + DELETE` > Lock screen
 
+## Window Actions
+`$mainMod + Q` > Close active window
+
 ## Tiling & Floating 
 - `$mainMod + V` > Toggle floating mode
 - `$mainMod + F` > Toggle fullscreen
 - `$mainMod + Y` > Pin window (always visible)
-- `$mainMod + Return` > Launch terminal
+- `$mainMod + J` > Toggle split mode (dwindle)
+- `$mainMod SHIFT + M` > Swap layout (master|dwindle)
 
-### Window Cycling
+## Window Cycling
 - `Alt + Tab` > Cycle to next window
 - `Alt + Tab` > Bring active window to top
 - `Alt + Tab` > Swap with master (if master layout is used)
+
+## Focus Movement
+- `$mainMod + arrow` > Focus to direction (left/right/up/down)
+
+## Move Windows
+- `$mainMod SHIFT + arrow` > Move window (left/right/up/down)
+
+## Resize
+`$mainMod + CTRL + SHIFT + (h/j/k/l or arrow keys)` > Resize in direction
+`$mainMod + R (h/j/k/l or arrow keys)` then hit `Esc` to exit resize mode
+
+## Mouse Controls
+`$mainMod + Left Button` > Move window
+`$mainMod + Right Button` > Resize window
+
+## Workspaces
+`$mainMod + [1-0]` > Switch to workspace
+`$mainMod + CTRL + [1-0]` > Move window & switch to workspace
+`$mainMod + SHIFT + [1-0]` > Move window silently to workspace
+`$mainMod + CTRL + ← / →` > Move to previous / next workspace
+
 
 ## FAQ
 **Updating Default Application**
