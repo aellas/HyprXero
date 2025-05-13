@@ -1,5 +1,5 @@
 # <p align="center">HyprXero</p>
- <p align="center">This is a homage to the legendary XeroLinux KDE</p>
+ <p align="center">Not a distro — just pure Xero style for Hyprland</p>
  
  ![preview](assets/hyprxero.png?raw=true)
 
