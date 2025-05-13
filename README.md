@@ -47,8 +47,12 @@ Below are the keybindings for Hyrpland
 - `Alt + Tab` > Swap with master (if master layout is used)
 
 ## FAQ
-** Updating Default Application **
-- You can easily update the default applications by editiong `/hypr/config/defaults.conf`
+**Updating Default Application**
+- You can easily update the default applications by editing `/hypr/config/defaults.conf`
+- Let's say you want to use alacritty instead of kitty
+- edit `$terminal = kitty` to 
+- `$terminal = alacritty`
+
 
 
 
