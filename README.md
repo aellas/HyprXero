@@ -1,8 +1,6 @@
 # <p align="center">HyprXero</p>
  <p align="center">This is a homage to the legendary XeroLinux KDE</p>
- 
-## Images
-![preview](assets/hyprxero.png?raw=true)
+ ![preview](assets/hyprxero.png?raw=true)
 
 
 ## Required Packages
@@ -10,10 +8,10 @@
 hyprland hypridle hyprlock hyprpicker hyprpolkitagent waybar wl-clipboard swaync nwg-dock-hyprland pyprland wttrbar nwg-look rofi-wayland grim slurp satty swaybg
 kitty kvantum ttf-ubuntu-nerd qt5ct qt6ct qt5-wayland qt6-wayland thunar wlogout pamixer nm-connection-editor pavucontrol falkon xlapit-cli
 ```
-
 ## Supported Platforms
 - Arch
 - XeroLinux
+## Installation
 
 ## Main Packages
 - Terminal: Kitty
