@@ -1,4 +1,5 @@
 # <p align="center">HyprXero</p>
+> [!CAUTION] 
 This is purely a config file, any issues that are related to Hyprland etc should be raised with Hyprland 
 
 ![preview](assets/hyprxero.png?raw=true)
