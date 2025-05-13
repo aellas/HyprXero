@@ -1,7 +1,9 @@
 # <p align="center">HyprXero</p>
  <p align="center">This is a homage to the legendary XeroLinux KDE</p>
-
+ 
+## Images
 ![preview](assets/hyprxero.png?raw=true)
+
 
 ## Required Packages
 ```
