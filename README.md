@@ -34,7 +34,7 @@ Will add later
 - **Screenshot** ➤ Grim/Slurp + Satty
 
 ## ⌨️ Hyprland Keybinds
-All keybindings follow the `$mainMod` convention (`$mainMod` = Super/Windows key)
+All keybindings follow the `$mainMod` convention (`$mainMod` = **Super/Windows key**)
 
 ### 🚀 Application Launching
 - `$mainMod + Return` ➤ Launch terminal (Kitty)
