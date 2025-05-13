@@ -1,4 +1,5 @@
 # <p align="center">HyprXero</p>
+This is purely a config file, any issues that are related to Hyprland etc should be raised with Hyprland 
 
 ![preview](assets/hyprxero.png?raw=true)
 
@@ -27,12 +28,13 @@ kitty kvantum ttf-ubuntu-nerd qt5ct qt6ct qt5-wayland qt6-wayland thunar wlogout
 - Logout: Wlogout
 - Screenshot: Grim/Slurp + Swappy
 
-## Main Keybinds 
-| Keybind | Description |
-|---|---|
-| Mod + Enter | Launch Terminal |
-| Mod + Space | Launch Rofi |
-| Mod + B | Open Web Browser |
-| Mod + N | Open Filemanager |
+## Hyprland Keybinds
+
+Below are the keybindings for Hyrpland
+
+# Application Launching
+Please note ($modifier) = Mod Key (Windows Button)
+- `$modifier + Return` > Launch Terminal
+
 
 
