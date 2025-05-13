@@ -33,13 +33,18 @@ kitty kvantum ttf-ubuntu-nerd qt5ct qt6ct qt5-wayland qt6-wayland thunar wlogout
 Below are the keybindings for Hyrpland
 
 ### Application Launching
-*$modifier = Mod Key (Windows Button)*
-- `$modifier + Return` > Launch Terminal
-- `$modifier + B` > Launch Web Browser
-- `$modifier + Space` > Launch Rofi
-- `$modifier + A` > Launch Screenshot
-- `$modifier + N` > Launch Launch Filemanager
-- `$modifier SHIFT + W` > Relaunch Waybar
+| Keybind                | Description                |
+| ---------------------- | -------------------------- |
+| `$mainMod + Return`    | Open terminal              |
+| `$mainMod + N`         | Open file manager          |
+| `$mainMod + B`         | Open web browser           |
+| `$mainMod + SPACE`     | Application launcher       |
+| `$mainMod + A`         | Screenshot region          |
+| `$mainMod + C`         | Pick color (hex)           |
+| `$mainMod + SHIFT + P` | Launch calculator          |
+| `$mainMod + SHIFT + W` | Relaunch Waybar            |
+| `$mainMod + SHIFT + T` | Toggle scratchpad terminal |
+| `CTRL + ALT + DELETE`  | Lock screen                |
 
 ### Window Cycling
 - `Alt + Tab` > Cycle to next window
@@ -50,8 +55,7 @@ Below are the keybindings for Hyrpland
 **Updating Default Application**
 - You can easily update the default applications by editing `/hypr/config/defaults.conf`
 - Let's say you want to use alacritty instead of kitty
-- edit `$terminal = kitty` to 
-- `$terminal = alacritty`
+- edit `$terminal = kitty` to `$terminal = alacritty`
 
 
 
