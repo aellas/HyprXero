@@ -41,11 +41,14 @@ Below are the keybindings for Hyrpland
 - `$modifier + N` > Launch Launch Filemanager
 - `$modifier SHIFT + W` > Relaunch Waybar
 
-
 ### Window Cycling
 - `Alt + Tab` > Cycle to next window
 - `Alt + Tab` > Bring active window to top
 - `Alt + Tab` > Swap with master (if master layout is used)
+
+## FAQ
+** Updating Default Application **
+- You can easily update the default applications by editiong `/hypr/config/defaults.conf`
 
 
 
