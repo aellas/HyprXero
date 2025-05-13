@@ -1,8 +1,8 @@
 # <p align="center">HyprXero</p>
  <p align="center">A sleek homage to the legendary XeroLinux KDE Rice — now on Hyprland</p>
  
-> [!CAUTION]
-> This is just dotfiles, no support will be provided if anything breaks
+> [!WARNING]
+> We provide no support for this config, please use at your own risk! 
  
  ![preview](assets/hyprxero.png?raw=true)
 
