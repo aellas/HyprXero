@@ -4,7 +4,7 @@
     "multithreading": true
   },
   "logo": {
-    "source": "~/.config/fastfetch/archlinux.png",
+    "source": "~/.config/hypr/ext/fastfetch/archlinux.png",
     "height": 8,
     "padding": {
       "top": 2,

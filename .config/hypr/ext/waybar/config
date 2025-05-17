@@ -69,14 +69,14 @@
 
     "custom/keybinds": {
         "format": "󰘳",
-        "on-click": "~/.config/hypr/scripts/waybar/modules/keybinds.sh",
+        "on-click": "~/.config/hypr/waybar/modules/keybinds.sh",
         "tooltip": true,
         "tooltip-format": "Search Keybinds"
     },
 
     "custom/launcher": {
         "format": " ",
-        "on-click": "rofi -show drun -config ~/.config/hypr/ext/rofi/config.rasi",
+        "on-click": "rofi -show drun -config ~/.config/hypr/rofi/config.rasi",
         "tooltip": true,
         "tooltip-format": "Application Launcher"
     },
@@ -101,14 +101,14 @@
     "format": "  {}",
     "escape": true,
     "return-type": "json",
-    "exec": "~/.config/hypr/scripts/waybar/modules/updates.sh",
+    "exec": "~/.config/hypr/waybar/modules/updates.sh",
     "interval": 900,
     "on-click": "kitty -e /usr/local/bin/upd",
-    "on-click-right": "~/.config/hypr/scripts/waybar/modules/software.sh"
+    "on-click-right": "~/.config/hypr/waybar/modules/software.sh"
   },
 
     "custom/network": {
-        "exec": "~/.config/hypr/scripts/waybar/modules/network.sh",
+        "exec": "~/.config/hypr/waybar/modules/network.sh",
         "interval": 10,
         "tooltip": true,
         "on-click": "nm-connection-editor",
@@ -189,7 +189,7 @@
 
     "custom/shutdown": {
         "format": "",
-        "on-click": "wlogout -l ~/.config/hypr/ext/wlogout/layout -C ~/.config/hypr/ext/wlogout/style.css",
+        "on-click": "wlogout -l ~/.config/hypr/wlogout/layout -C ~/.config/hypr/wlogout/style.css",
         "tooltip": true,
         "tooltip-format": "Power Menu"
     },

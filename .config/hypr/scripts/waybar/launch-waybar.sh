@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-WAYBAR_CONFIG_DIR="$HOME/.config/hypr/ext/waybar"
+WAYBAR_CONFIG_DIR="$HOME/.config/hypr/waybar"
 LAPTOP_CONFIG="$WAYBAR_CONFIG_DIR/laptop/config"
 DESKTOP_CONFIG="$WAYBAR_CONFIG_DIR/config"
 STYLE="$WAYBAR_CONFIG_DIR/style.css"

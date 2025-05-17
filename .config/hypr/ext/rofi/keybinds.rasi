@@ -16,8 +16,8 @@ configuration {
 }
 
 /*****----- Global Properties -----*****/
-@import "/home/array/.config/hypr/ext/rofi/colors/layan.rasi"
-@import "/home/array/.config/hypr/ext/rofi/shared/fonts-keybinds.rasi"
+@import "/home/array/.config/hypr/rofi/colors/layan.rasi"
+@import "/home/array/.config/hypr/rofi/shared/fonts-keybinds.rasi"
 /*****----- Main Window -----*****/
 window {
     transparency:                "real";

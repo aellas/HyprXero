@@ -16,8 +16,8 @@ configuration {
 }
 
 /*****----- Global Properties -----*****/
-@import ".config/hypr/ext/rofi/colors/layan.rasi"
-@import ".config/hypr/ext/rofi/shared/fonts.rasi"
+@import ".config/hypr/rofi/colors/layan.rasi"
+@import ".config/hypr/rofi/shared/fonts.rasi"
 
 /*****----- Main Window -----*****/
 window {
