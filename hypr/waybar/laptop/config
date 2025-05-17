@@ -75,7 +75,7 @@
 
     "custom/launcher": {
         "format": "",
-        "on-click": "rofi -show drun",
+        "on-click": "rofi -show drun -config ~/.config/hypr/rofi/config.rasi",
         "tooltip": true,
         "tooltip-format": "Application Launcher"
     },
