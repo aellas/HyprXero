@@ -56,11 +56,11 @@
         },
         {
           "label": "󰓅",
-          "command": "hyprlock"
+          "command": "powerprofilesctl set performance"
         },
         {
           "label": "󰩈",
-          "command": "nm-connection-editor"
+          "command": "hyprctl dispatch exit"
         }
       ]
     }
